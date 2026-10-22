@@ -22,29 +22,29 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
 <style>
 body{margin:0}
-a{color:#31815f}a:hover{color:#226146}
+a{color:#31815F}a:hover{color:#31815F}
 .jf button{font-family:inherit}
 .jf input{font-family:inherit}
-.jf input::placeholder{color:#7b8a90}
+.jf input::placeholder{color:#55666D}
 .jf .iconbtn:hover{background:#f2f5f7}
 .jf .mapbtn:hover{background:#f2f5f7}
 .jf .sugg:hover{background:#f2f5f7}
-.jf .glink{color:#31815f;text-decoration:none}
-.jf .glink:hover{color:#226146;text-decoration:underline}
-.jf .infolink{background:none;border:0;padding:0;cursor:pointer;color:#31815f;font-size:15px;line-height:20px;text-align:left}
-.jf .infolink:hover{color:#12232b;text-decoration:underline}
+.jf .glink{color:#31815F;text-decoration:none}
+.jf .glink:hover{color:#31815F;text-decoration:underline}
+.jf .infolink{background:none;border:0;padding:0;cursor:pointer;color:#31815F;font-size:15px;line-height:20px;text-align:left}
+.jf .infolink:hover{color:#0C1D24;text-decoration:underline}
 .jf .langbtn:hover{background:rgba(255,255,255,0.08)}
 .jf .ghost:hover{background:#f2f5f7}
 .jf .mapimg-cursor{cursor:zoom-in}
 .jf .ntoast{animation:jfToastR .2s ease-out}
 @keyframes jfToastR{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-.jf .tlink{background:none;border:0;padding:0;cursor:pointer;color:#31815f;font-size:15px;font-weight:500}
-.jf .tlink:hover{color:#226146}
+.jf .tlink{background:none;border:0;padding:0;cursor:pointer;color:#31815F;font-size:15px;font-weight:500}
+.jf .tlink:hover{color:#31815F}
 .jf .maplayer{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;pointer-events:none}
 .jf .mapimg{animation:jfMapIn .38s ease-out}
 .jf .ghost:hover{background:#f2f5f7}
-.jf .nextbtn-on:hover{background:#13414f}
-.jf .gatefill{height:100%;border-radius:4px;background:#0b2d3b;transition:width .35s ease}
+.jf .nextbtn-on:hover{background:#0B2D3B}
+.jf .gatefill{height:100%;border-radius:4px;background:#0B2D3B;transition:width .35s ease}
 @keyframes jfMapIn{from{opacity:0}to{opacity:1}}
 @keyframes jfToast{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
 .jf .toast{animation:jfToast .2s ease-out}
@@ -57,13 +57,13 @@ a{color:#31815f}a:hover{color:#226146}
 .jf .readywrap .readycard{transform:translateY(-6px);transition:transform .42s cubic-bezier(.2,.7,.2,1)}
 .jf .readywrap.on{grid-template-rows:1fr;opacity:1;margin-top:16px;visibility:visible;transition:grid-template-rows .42s cubic-bezier(.2,.7,.2,1),margin-top .42s cubic-bezier(.2,.7,.2,1),opacity .35s ease .1s,visibility 0s}
 .jf .readywrap.on .readycard{animation:jfFade .45s ease .1s both}
-.jf .skel{display:block;border-radius:6px;background:linear-gradient(90deg,#eef1f4 25%,#f7f9fa 50%,#eef1f4 75%);background-size:200% 100%;animation:jfSkel 1.3s ease-in-out infinite}
+.jf .skel{display:block;border-radius:6px;background:linear-gradient(90deg,#F2F5F7 25%,#f7f9fa 50%,#F2F5F7 75%);background-size:200% 100%;animation:jfSkel 1.3s ease-in-out infinite}
 @keyframes jfSkel{from{background-position:150% 0}to{background-position:-50% 0}}
 .jf .mapsearch{animation:jfFade .25s ease-out}
 .jf .panelin{animation:jfFade .3s ease-out}
 @media (prefers-reduced-motion: reduce){.jf .readywrap,.jf .readywrap .readycard{transition:none}.jf .skel{animation:none}}
 .jf .startbig-on{animation:jfPulse 2.2s ease-out infinite}
-.jf .startbig-on:hover{background:#13414f}
+.jf .startbig-on:hover{background:#0B2D3B}
 .jf .startbig-on .nudge{animation:jfNudge 1.1s ease-in-out infinite}
 .jf .beginbtn.live{animation:jfPulseLight 2.2s ease-out infinite}
 @keyframes jfPulse{0%{box-shadow:0 0 0 0 rgba(49,129,95,.55)}70%{box-shadow:0 0 0 10px rgba(49,129,95,0)}100%{box-shadow:0 0 0 0 rgba(49,129,95,0)}}
@@ -79,8 +79,8 @@ a{color:#31815f}a:hover{color:#226146}
 @keyframes jfTick{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion: reduce){.jf .readybanner,.jf .readycheck,.jf .readybtn{animation:none}.jf .readytick{stroke-dashoffset:0;animation:none}}
 @media (prefers-reduced-motion: reduce){.jf .startbig-on,.jf .startbig-on .nudge,.jf .beginbtn.live{animation:none}}
-.jf .beginbtn:hover{background:#f7f9fa!important}
-.jf .beginbtn:hover .mgo{background:#13414f}
+.jf .beginbtn:hover{background:var(--muted)!important}
+.jf .beginbtn:focus-visible{box-shadow:inset 0 0 0 3px var(--ring)}
 @keyframes jfFade{from{opacity:0}to{opacity:1}}
 @keyframes jfPop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .jf button,.jf a{transition:background-color .18s ease,color .18s ease,box-shadow .2s ease,border-color .18s ease}
@@ -133,68 +133,231 @@ a{color:#31815f}a:hover{color:#226146}
 @keyframes jfSlideL{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){.jf *{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}}
 .jf .stephead{width:100%;display:flex;align-items:center;justify-content:space-between;border:0;font-family:inherit;text-align:left;transition:background-color .2s ease,color .2s ease}
-.jf .stephead:not([disabled]):hover{background:#eef2f5}
-.jf .fieldgrp{margin-top:12px;border-radius:8px;background:#ffffff;padding-bottom:4px}
+.jf .fieldgrp{margin-top:12px}
 .jf .addrsub:empty{display:none}
-.jf .addrrow{display:flex;align-items:center;gap:14px;width:100%;min-height:52px;padding:0 0 0 44px;border:0;background:transparent;cursor:pointer;font-family:inherit;font-size:15px;color:#2b3a40;text-align:left;border-radius:6px}
-.jf .addrrow:hover{background:#f4f6f8}
-.jf .cbox{flex:none;width:18px;height:18px;box-sizing:border-box;border:1.5px solid #c7d4d9;border-radius:4px;background:#ffffff;display:flex;align-items:center;justify-content:center;transition:background-color .18s ease,border-color .18s ease}
-.jf .cbox.on{background:#2f7d58;border-color:#2f7d58}
-.jf .cbox svg{opacity:0;transform:translateY(2px);transition:opacity .18s ease,transform .18s ease}
-.jf .cbox.on svg{opacity:1;transform:none}
+.jf .addrrow{box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;min-height:48px;padding:12px 16px;border:0;background:transparent;cursor:pointer;font-family:inherit;font-size:15px;line-height:22px;color:var(--foreground);text-align:left;transition:background-color .15s ease}
+.jf .addrlist .addrrow + .addrrow{border-top:1px solid var(--border)}
+.jf .addrrow:hover,.jf .addrrow.hov{background:var(--muted)}
+.jf .addrrow:hover .ds-check:not(.on){border-color:var(--primary)}
+.jf .addrrow:focus-visible{box-shadow:inset 0 0 0 3px var(--ring)}
+.jf .addrrow:focus-visible .ds-check{border-color:var(--primary)}
 .jf .addrin{animation:jfaddr .4s cubic-bezier(.22,1,.36,1) both}
 @keyframes jfaddr{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.jf .maptip::before{content:"";position:absolute;left:14px;top:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid var(--tipbg)}
+.jf .maptip,.jf .zoomtip{position:absolute;pointer-events:none;z-index:23}
 .jf .maptip{animation:jftip .2s ease both}
 @keyframes jftip{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
-.jf .ralabel{display:flex;align-items:center;gap:6px;white-space:nowrap;background:rgba(255,255,255,0.96);color:#12232b;font-size:12px;font-weight:500;line-height:16px;padding:4px 9px 4px 7px;border-radius:6px;box-shadow:0 1px 4px rgba(11,45,59,0.22);pointer-events:none;transition:opacity .3s ease}
+.jf .ralabel{display:flex;align-items:center;gap:6px;white-space:nowrap;background:rgba(255,255,255,0.96);color:#0C1D24;font-size:12px;font-weight:500;line-height:16px;padding:4px 9px 4px 7px;border-radius:6px;box-shadow:0 1px 4px rgba(11,45,59,0.22);pointer-events:none;transition:opacity .3s ease}
 .jf .tipbtn{position:relative}
-.jf .tipbtn[data-tip]:hover::after{content:attr(data-tip);position:absolute;left:calc(100% + 16px);top:50%;transform:translateY(-50%);background:#0b2d3b;color:#ffffff;font-size:13px;font-weight:500;line-height:18px;padding:7px 11px;border-radius:6px;white-space:nowrap;z-index:30;pointer-events:none;box-shadow:0 2px 8px rgba(11,45,59,.2);animation:jftipx .16s ease both}
-.jf .tipbtn[data-tip]:hover::before{content:"";position:absolute;left:calc(100% + 10px);top:50%;transform:translateY(-50%);border-top:6px solid transparent;border-bottom:6px solid transparent;border-right:6px solid #0b2d3b;z-index:30;pointer-events:none;animation:jftipx .16s ease both}
+.jf .tipbtn[data-tip]:hover::after{content:attr(data-tip);position:absolute;left:calc(100% + 16px);top:50%;transform:translateY(-50%);background:#0B2D3B;color:#ffffff;font-size:13px;font-weight:500;line-height:18px;padding:7px 11px;border-radius:6px;white-space:nowrap;z-index:30;pointer-events:none;box-shadow:0 2px 8px rgba(11,45,59,.2);animation:jftipx .16s ease both}
+.jf .tipbtn[data-tip]:hover::before{content:"";position:absolute;left:calc(100% + 10px);top:50%;transform:translateY(-50%);border-top:6px solid transparent;border-bottom:6px solid transparent;border-right:6px solid #0B2D3B;z-index:30;pointer-events:none;animation:jftipx .16s ease both}
 @keyframes jftipx{from{opacity:0}to{opacity:1}}
-.jf .selpop{position:absolute;z-index:24;width:252px;background:#ffffff;border-radius:8px;box-shadow:0 8px 26px rgba(11,45,59,.22),0 0 0 1px rgba(11,45,59,.05);overflow:hidden;animation:jfselin .22s cubic-bezier(.22,1,.36,1) both}
+.jf .selpop{position:absolute;z-index:24;width:252px;background:var(--background);border-radius:10px;box-shadow:var(--pop-ring),var(--shadow-md);overflow:hidden;animation:jfselin .22s cubic-bezier(.22,1,.36,1) both}
 @keyframes jfselin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.jf .selitem{display:flex;align-items:center;gap:10px;width:100%;min-height:68px;padding:12px 14px 12px 16px;box-sizing:border-box;border:0;border-bottom:1px solid #e9edf2;background:#ffffff;font-family:inherit;text-align:left;cursor:pointer;transition:background-color .15s ease}
+.jf .selitem{display:flex;align-items:center;gap:10px;width:100%;min-height:60px;padding:10px 12px;box-sizing:border-box;border:0;border-bottom:1px solid var(--border);background:var(--background);font-family:inherit;text-align:left;cursor:pointer;color:var(--muted-foreground);transition:background-color .1s ease}
 .jf .selitem:last-child{border-bottom:0}
-.jf .selitem:hover{background:#f4f6f8}
-.jf .statusbar{position:absolute;left:546px;top:910px;transform:translateX(-50%);min-width:330px;max-width:520px;height:54px;box-sizing:border-box;background:#ffffff;border-radius:10px;box-shadow:0 2px 10px rgba(11,45,59,.14);padding:0 8px;display:flex;align-items:center;gap:10px;z-index:7;animation:jfFade .3s ease both}
-.jf .smeta{flex:none;font-size:12px;line-height:18px;font-weight:500;color:#2b3a40;background:#eef2f5;border-radius:4px;padding:0 6px;font-variant-numeric:tabular-nums}
-.jf .rownum{flex:none;width:20px;height:20px;box-sizing:border-box;border-radius:50%;border:0;background:#0b2d3b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;line-height:1;color:#ffffff;font-variant-numeric:tabular-nums;margin-right:2px}
-.jf .donepill{display:inline-flex;align-items:center;height:32px;padding:0 13px;border-radius:16px;background:#eaf5ef;color:#2f7d58;font-size:15px;font-weight:500;line-height:1;animation:jfpill .45s cubic-bezier(.22,1,.36,1) both}
+.jf .selitem:hover,.jf .selitem:focus-visible{background:var(--muted)}
+.jf .statusbar{position:absolute;left:546px;top:906px;transform:translateX(-50%);min-width:330px;max-width:600px;min-height:58px;box-sizing:border-box;background:var(--background);border-radius:10px;box-shadow:var(--pop-ring),var(--shadow-lg);padding:8px 8px 8px 12px;display:flex;align-items:center;gap:10px;z-index:7;animation:jfFade .3s ease both}
+.jf .pendrow .ds-featured--dark{background:var(--primary-soft);color:var(--primary)}
+.jf .donepill{display:inline-flex;align-items:center;height:32px;padding:0 13px;border-radius:16px;background:#eaf5ef;color:#31815F;font-size:15px;font-weight:500;line-height:1;animation:jfpill .45s cubic-bezier(.22,1,.36,1) both}
 @keyframes jfpill{from{opacity:0;transform:translateX(8px)}to{opacity:1;transform:none}}
 .jf .stepbody{display:grid;grid-template-rows:0fr;opacity:0;visibility:hidden;transition:grid-template-rows .45s cubic-bezier(.22,1,.36,1),opacity .2s ease,visibility 0s linear .45s}
 .jf .stepbody.open{grid-template-rows:1fr;opacity:1;visibility:visible;transition:grid-template-rows .45s cubic-bezier(.22,1,.36,1),opacity .35s ease .08s,visibility 0s}
 .jf .stepinner{overflow:hidden;min-height:0}
 .jf .toolupload{cursor:pointer}
-.jf .toolupload:hover,.jf [role=toolbar] button[aria-pressed=false]:hover{background:#f2f5f7!important}
-.jf .toolupload:focus-within{box-shadow:0 0 0 2px #31815f}
+.jf .toolupload:focus-within{box-shadow:0 0 0 3px var(--ring)}
 .jf .sitefield,.jf .sitefield input,.jf .sitefield span,.jf .sitesize span{transition:background-color .3s ease,border-color .3s ease,color .3s ease}
-.jf .pendrow .sitefield{background:#f4f6f8 !important;border-color:#e3e8ec !important;cursor:not-allowed}
+.jf .pendrow .sitefield{background:var(--muted) !important;border-color:var(--border) !important;cursor:not-allowed}
 .jf .pendrow input{color:#a9b6bf !important;cursor:not-allowed;-webkit-text-fill-color:#a9b6bf}
 .jf .pendrow input::placeholder{color:#b8c3c8}
 .jf .pendrow .sitefield span,.jf .pendrow .sitesize span{color:#b0bbc0 !important}
 .jf .pendrow .sitesize{background:transparent}
-.jf .pendtext{flex:1 1 auto;min-width:0;margin-right:18px;font-size:14px;line-height:18px;font-style:italic;color:#7b8a90;white-space:normal;animation:jfFade .35s ease both}
+.jf .pendtext{flex:1 1 auto;min-width:0;margin-right:18px;font-size:15px;line-height:22px;font-style:italic;color:var(--muted-foreground);white-space:normal;animation:jfFade .35s ease both}
 .jf .pendrow > div:last-child{flex:none !important;margin-left:8px}
-.jf .pendrow .sitesize.live span:first-child{color:#2b3a40 !important}
+.jf .pendrow .sitesize.live span{color:var(--muted-foreground) !important}
 .jf .pendhint{animation:jfFade .35s ease both}
 .jf .penddot{animation:jfBlink 1.6s ease-in-out infinite}
 @keyframes jfBlink{0%,100%{opacity:1}50%{opacity:.25}}
 .jf .polylabel{animation:jfFade .3s ease both;display:flex;flex-direction:column;align-items:center;gap:3px;color:#ffffff;text-align:center;white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.55),0 0 6px rgba(0,0,0,.25)}
-.jf .pl-num{width:20px;height:20px;box-sizing:border-box;border-radius:50%;border:0;background:#0b2d3b;color:#ffffff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;line-height:1;text-shadow:none;box-shadow:0 1px 3px rgba(0,0,0,.25)}
-.jf .pl-name{font-size:14px;line-height:18px;font-weight:600;max-width:170px;overflow:hidden;text-overflow:ellipsis}
-.jf .pl-meta{display:flex;align-items:center;gap:6px;font-size:12px;line-height:16px;font-weight:500;color:rgba(255,255,255,.92)}
-.jf .pl-depth{display:inline-flex;align-items:center;gap:3px;padding:1px 6px;border-radius:4px;background:rgba(255,255,255,.2);text-shadow:0 1px 2px rgba(0,0,0,.45)}
+.jf .pl-num{min-width:20px;height:20px;box-sizing:border-box;border-radius:32px;padding:0 6px;border:0;background:var(--primary);color:#ffffff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;line-height:16px;text-shadow:none;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.jf .pl-name{font-size:15px;line-height:22px;font-weight:600;max-width:170px;overflow:hidden;text-overflow:ellipsis}
+.jf .pl-meta{display:flex;align-items:center;gap:6px;font-size:14px;line-height:20px;font-weight:500;color:rgba(255,255,255,.92)}
+.jf .pl-depth{display:inline-flex;align-items:center;gap:4px;padding:2px 6px;border-radius:4px;font-size:12px;line-height:16px;background:rgba(255,255,255,.2);text-shadow:0 1px 2px rgba(0,0,0,.45)}
 .jf .measurelbl{animation:jfFade .2s ease both}
 .jf .pcard>div{grid-area:1/1;opacity:1;visibility:visible;transition:opacity .4s ease .1s,visibility 0s}
 .jf .pcard>div.pchide{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility 0s linear .2s}
 .jf .zoomtip{animation:jfFade .2s ease both}
+.jf .pinring{fill:rgba(11,45,59,0.28);stroke:#0B2D3B;stroke-width:1.5;opacity:0;transform-box:fill-box;transform-origin:center}
+.jf .pinring.on{animation:jfPinRing 1.1s ease-out 2 both}
+@keyframes jfPinRing{0%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.9)}}
+@media (prefers-reduced-motion: reduce){.jf .pinring.on{animation:none;opacity:.6}}
+/* ---- DS4 (DMP design system) tokens and components, as @dmp/frontend-vue-components 1.0.0-beta.1 draws them ---- */
+.jf{--background:#FFFFFF;--foreground:#0C1D24;--muted:#F2F5F7;--muted-foreground:#55666D;--border:#E3E8EC;--primary:#0B2D3B;--primary-foreground:#FFFFFF;--primary-soft:#E6EAF0;--brand:#31815F;--destructive:#C2273B;--destructive-soft:#F5E5E7;--success-soft:#DDF0E9;--ring:rgba(11,45,59,.5);--ring-soft:rgba(11,45,59,.2);--pop-ring:0 0 0 1px rgba(12,29,36,.1);--shadow-xs:0 1px 2px 0 rgba(0,0,0,.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.jf :focus{outline:none}
+/* Button: one control scale (xxs 24 · xs 28 · sm 32 · md 36 · lg 40), radius 6, 14px medium */
+.jf .ds-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;padding:0 12px;border:1px solid transparent;border-radius:6px;background:transparent;color:var(--foreground);font-family:inherit;font-size:14px;line-height:20px;font-weight:500;white-space:nowrap;cursor:pointer;flex:none;text-decoration:none;user-select:none;transition:background-color .15s ease,color .15s ease,border-color .15s ease,box-shadow .15s ease,opacity .15s ease,transform .1s ease}
+.jf .ds-btn svg{flex:none;pointer-events:none}
+.jf .ds-btn:focus-visible{border-color:var(--primary);box-shadow:0 0 0 3px var(--ring)}
+.jf .ds-btn:active:not(:disabled):not([aria-haspopup]){transform:translateY(1px)}
+.jf .ds-btn:disabled,.jf .ds-btn[aria-disabled=true]{opacity:.5;cursor:not-allowed;transform:none}
+.jf .ds-btn--primary{background:var(--primary);color:var(--primary-foreground)}
+.jf .ds-btn--outline{border-color:var(--border);background:var(--background)}
+.jf .ds-btn--outline:hover:not(:disabled),.jf .ds-btn--outline[aria-expanded=true]{background:var(--muted)}
+.jf .ds-btn--secondary{background:var(--muted)}
+.jf .ds-btn--secondary:hover:not(:disabled){background:rgba(242,245,247,.8)}
+.jf .ds-btn--ghost:hover:not(:disabled),.jf .ds-btn--ghost[aria-expanded=true]{background:var(--muted)}
+.jf .ds-btn--destructive{background:rgba(194,39,59,.1);color:var(--destructive)}
+.jf .ds-btn--destructive:hover:not(:disabled){background:rgba(194,39,59,.2)}
+.jf .ds-btn--success{background:var(--brand);color:#ffffff}
+.jf .ds-btn--link-brand{color:var(--brand);text-underline-offset:4px}
+.jf .ds-btn--link-brand:hover:not(:disabled){text-decoration:underline}
+.jf .ds-btn--sm{height:32px;padding:0 10px}
+.jf .ds-btn--xs{height:28px;padding:0 10px;gap:4px;font-size:12.8px}
+.jf .ds-btn--icon{width:32px;height:32px;padding:0}
+.jf .ds-btn--icon-sm{width:28px;height:28px;padding:0}
+.jf .ds-btn--icon-xs{width:24px;height:24px;padding:0}
+.jf .ds-btn--icon-lg{width:36px;height:36px;padding:0}
+.jf .ds-btn--block{width:100%}
+/* MainNav (primary bar) icon buttons */
+.jf .ds-navbtn{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:36px;min-width:36px;padding:0 10px;border:0;border-radius:6px;background:transparent;color:#ffffff;font-family:inherit;font-size:14px;line-height:20px;font-weight:500;cursor:pointer;transition:background-color .15s ease,box-shadow .15s ease}
+.jf .ds-navbtn:hover{background:rgba(255,255,255,.1)}
+.jf .ds-navbtn:focus-visible{box-shadow:0 0 0 3px rgba(255,255,255,.5)}
+.jf .ds-avatar{box-sizing:border-box;width:40px;height:40px;border-radius:50%;border:0;padding:0;background:var(--muted);color:var(--primary);font-family:inherit;font-size:14px;font-weight:500;cursor:pointer;transition:box-shadow .15s ease}
+.jf .ds-avatar:hover{box-shadow:0 0 0 3px rgba(255,255,255,.25)}
+/* BackButton: outlined 28px square, the arrow slides out and back on hover */
+.jf .ds-back{box-sizing:border-box;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;padding:0;border:1px solid var(--border);border-radius:6px;background:var(--background);color:var(--foreground);cursor:pointer;overflow:hidden;transition:background-color .15s ease,box-shadow .15s ease}
+.jf .ds-back:hover{background:var(--muted)}
+.jf .ds-back:hover svg{animation:dsBackArrow .3s ease forwards}
+.jf .ds-back:focus-visible{border-color:var(--primary);box-shadow:0 0 0 3px var(--ring)}
+@keyframes dsBackArrow{49%{transform:translateX(-50%)}50%{opacity:0;transform:translateX(50%)}51%{opacity:1}}
+/* Input and InputGroup: 36px, radius 6, the input border, a 3px ring on focus */
+.jf .ds-input{box-sizing:border-box;height:36px;min-width:0;padding:0 10px;border:1px solid var(--border);border-radius:6px;background:var(--background);color:var(--foreground);font-family:inherit;font-size:14px;line-height:20px;outline:none;transition:border-color .15s ease,box-shadow .15s ease,background-color .15s ease}
+.jf .ds-input:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--ring)}
+.jf .ds-input::placeholder,.jf .ds-group input::placeholder{color:var(--muted-foreground)}
+.jf .ds-input:disabled{opacity:.5;cursor:not-allowed}
+.jf .ds-group{box-sizing:border-box;position:relative;display:flex;align-items:center;height:36px;min-width:0;border:1px solid var(--border);border-radius:6px;background:var(--background);color:var(--foreground);transition:border-color .15s ease,box-shadow .15s ease,background-color .15s ease}
+.jf .ds-group:focus-within{border-color:var(--primary);box-shadow:0 0 0 3px var(--ring)}
+.jf .ds-group > svg{flex:none;margin-left:10px;color:var(--muted-foreground)}
+.jf .ds-group input{flex:1;min-width:0;height:100%;box-sizing:border-box;border:0;outline:none;background:transparent;padding:0 10px;font-family:inherit;font-size:14px;line-height:20px;color:var(--foreground)}
+.jf .ds-group > svg + input{padding-left:8px}
+.jf .ds-group-text{flex:none;padding-right:10px;font-size:14px;line-height:20px;color:var(--muted-foreground);white-space:nowrap}
+.jf .ds-group--float{box-shadow:var(--shadow-md);border-color:transparent}
+.jf .ds-group--float:focus-within{box-shadow:var(--shadow-md),0 0 0 3px var(--ring)}
+/* Checkbox: 16px, radius 4, primary when checked */
+.jf .ds-check{flex:none;width:16px;height:16px;box-sizing:border-box;border:1.5px solid #8d999e;border-radius:4px;background:var(--background);color:var(--primary-foreground);display:inline-flex;align-items:center;justify-content:center;transition:background-color .15s ease,border-color .15s ease,box-shadow .15s ease}
+.jf .ds-check.on{background:var(--primary);border-color:var(--primary)}
+.jf .ds-check svg{opacity:0;transition:opacity .15s ease}
+.jf .ds-check.on svg{opacity:1}
+.jf input[type=checkbox].ds-native{appearance:none;-webkit-appearance:none;margin:0;flex:none;width:16px;height:16px;box-sizing:border-box;border:1px solid var(--border);border-radius:4px;background:var(--background) no-repeat center/12px 12px;cursor:pointer;transition:background-color .15s ease,border-color .15s ease,box-shadow .15s ease}
+.jf input[type=checkbox].ds-native:checked{background-color:var(--primary);border-color:var(--primary);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E")}
+.jf input[type=checkbox].ds-native:focus-visible,.jf .ds-choice:focus-visible .ds-check{box-shadow:0 0 0 3px var(--ring);border-color:var(--primary)}
+/* Badge: 20px pill, 12px medium */
+.jf .ds-badge{display:inline-flex;align-items:center;justify-content:center;gap:4px;height:20px;box-sizing:border-box;padding:0 8px;border-radius:32px;font-size:12px;line-height:16px;font-weight:500;white-space:nowrap;flex:none;font-variant-numeric:tabular-nums}
+.jf .ds-badge--neutral{background:var(--muted);color:var(--foreground)}
+.jf .ds-badge--success{background:rgba(49,129,95,.1);color:var(--brand)}
+.jf .ds-badge--primary-solid{background:var(--primary);color:#ffffff}
+.jf .ds-badge--success-solid{background:var(--brand);color:#ffffff}
+/* Surface (12px grey ground) → Card (10px) → control (6px) */
+.jf .ds-surface{box-sizing:border-box;display:flex;flex-direction:column;gap:12px;padding:12px;border-radius:12px;background:var(--muted)}
+.jf .ds-surface-header{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:32px;padding:2px 6px 0;position:relative}
+.jf .ds-surface-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 6px 2px}
+.jf .ds-surface-title{margin:0;font-size:14px;line-height:20px;font-weight:500;color:var(--foreground)}
+.jf .ds-card{box-sizing:border-box;background:var(--background);border-radius:10px;box-shadow:var(--pop-ring);overflow:hidden}
+.jf .ds-card-flat{box-sizing:border-box;background:var(--background);border-radius:10px;overflow:hidden}
+.jf .ds-featured{flex:none;display:inline-flex;align-items:center;justify-content:center;border-radius:50%}
+.jf .ds-featured--dark{background:var(--primary);color:var(--primary-foreground)}
+.jf .ds-featured--light{background:var(--muted);color:var(--primary)}
+.jf .ds-featured--medium{background:var(--primary-soft);color:var(--primary)}
+.jf .ds-featured--white{background:var(--background);color:var(--primary)}
+.jf .ds-featured--success{background:var(--success-soft);color:var(--brand)}
+.jf .ds-featured--error{background:var(--destructive-soft);color:var(--destructive)}
+.jf .ds-featured--xxs{width:20px;height:20px;font-size:12px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.jf .ds-featured--sm{width:32px;height:32px}
+.jf .ds-featured--md{width:40px;height:40px}
+/* Menus: one row recipe for every popup list (36px rows, 6px panel) */
+.jf .ds-menu{box-sizing:border-box;min-width:128px;padding:6px;background:var(--background);color:var(--foreground);border-radius:6px;box-shadow:var(--pop-ring),var(--shadow-md);animation:dsPopIn .1s ease-out both}
+.jf .ds-menu-item{box-sizing:border-box;display:flex;align-items:center;gap:8px;width:100%;min-height:36px;padding:8px 10px;border:0;border-radius:4px;background:transparent;color:var(--foreground);font-family:inherit;font-size:14px;line-height:20px;font-weight:400;text-align:left;cursor:pointer;transition:background-color .1s ease,color .1s ease}
+.jf .ds-menu-item svg{flex:none;width:16px;height:16px}
+.jf .ds-menu-item:hover:not(:disabled),.jf .ds-menu-item:focus-visible,.jf .ds-menu-item.hi{background:var(--muted);color:var(--primary)}
+.jf .ds-menu-item:disabled{opacity:.5;cursor:default}
+.jf .ds-menu-item--destructive{color:var(--destructive)}
+.jf .ds-menu-item--destructive:hover:not(:disabled),.jf .ds-menu-item--destructive:focus-visible{background:rgba(194,39,59,.1);color:var(--destructive)}
+.jf .ds-menu-sep{height:1px;background:var(--border);margin:6px -6px}
+.jf .ds-menu-empty{padding:8px 10px;font-size:14px;line-height:20px;color:var(--muted-foreground)}
+@keyframes dsPopIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
+/* Dialog and ConfirmDialog */
+.jf .ds-overlay{position:absolute;inset:0;z-index:50;background:rgba(0,0,0,.1);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;animation:jfFade .15s ease both}
+.jf .ds-dialog{position:relative;box-sizing:border-box;display:flex;flex-direction:column;gap:16px;width:384px;max-width:calc(100% - 32px);padding:16px;background:var(--background);color:var(--foreground);border-radius:10px;box-shadow:var(--pop-ring);font-size:14px;line-height:20px;animation:dsDialogIn .1s ease-out both}
+.jf .ds-dialog--lg{width:512px}
+.jf .ds-dialog-header{display:flex;flex-direction:column;gap:8px}
+.jf .ds-dialog-title{margin:0;font-size:15px;line-height:22px;font-weight:500;color:var(--foreground)}
+.jf .ds-dialog-desc{margin:0;font-size:14px;line-height:20px;color:var(--muted-foreground)}
+.jf .ds-dialog-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:4px}
+.jf .ds-dialog-close{position:absolute;top:8px;right:8px}
+@keyframes dsDialogIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
+/* Toast (Sonner) */
+.jf .ds-toast{box-sizing:border-box;width:356px;display:flex;align-items:flex-start;gap:8px;padding:16px;background:var(--background);color:var(--foreground);border:1px solid var(--border);border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.1);font-size:13px;line-height:19.5px}
+.jf .ds-toast-title{font-size:13px;line-height:19.5px;font-weight:500;color:var(--foreground)}
+.jf .ds-toast-desc{font-size:13px;line-height:18.2px;color:#3f3f3f}
+/* Tooltip: dark foreground ground, 12px */
+.jf .ds-tooltip{box-sizing:border-box;background:var(--foreground);color:var(--background);font-size:12px;line-height:16px;font-weight:400;padding:6px 12px;border-radius:4px;white-space:nowrap}
+/* Alert: border, radius 6, title medium, description muted */
+.jf .ds-alert{box-sizing:border-box;display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:2px;padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--background);color:var(--foreground);font-size:14px;line-height:20px}
+.jf .ds-alert > svg{grid-row:span 2;width:16px;height:16px;margin-top:2px;color:currentColor}
+.jf .ds-alert-title{font-weight:500}
+.jf .ds-alert-desc{color:var(--muted-foreground)}
+/* InfoNote */
+.jf .ds-infonote{display:flex;align-items:center;gap:6px;font-size:14px;line-height:19.25px;color:var(--muted-foreground)}
+/* Link */
+.jf .ds-link{background:none;border:0;padding:0;font-family:inherit;font-size:15px;line-height:22px;font-weight:400;color:var(--brand);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer;border-radius:2px;transition:color .15s ease}
+.jf .ds-link:hover{text-decoration:none;color:rgba(49,129,95,.7)}
+.jf .ds-link:focus-visible{box-shadow:0 0 0 3px var(--ring)}
+/* Item rows (lists, popups) */
+.jf .ds-item{box-sizing:border-box;display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;border:0;border-radius:6px;background:transparent;font-family:inherit;text-align:left;cursor:pointer;color:var(--foreground);transition:background-color .1s ease}
+.jf .ds-item:hover,.jf .ds-item:focus-visible{background:var(--muted)}
+.jf .ds-item-title{display:block;font-size:14px;line-height:20px;font-weight:500;color:var(--foreground)}
+.jf .ds-item-desc{display:block;font-size:14px;line-height:20px;font-weight:400;color:var(--muted-foreground)}
+/* Step list (DS4 candidate): 56px bands */
+.jf .ds-steps{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.jf .ds-steps > section + section{border-top:1px solid var(--border)}
+.jf .stephead.ds-step{box-sizing:border-box;height:56px;gap:12px;padding:0 28px;font-size:15px;line-height:22px;font-weight:400;cursor:pointer}
+.jf .stephead.ds-step:focus-visible{box-shadow:inset 0 0 0 3px var(--ring)}
+.jf .ds-step--open{background:var(--muted);color:var(--foreground);box-shadow:var(--shadow-xs)}
+.jf .ds-step--done{background:var(--background);color:var(--foreground)}
+.jf .ds-step--done:hover{background:rgba(242,245,247,.6)}
+.jf .ds-step--next{background:rgba(242,245,247,.6);color:var(--foreground)}
+.jf .ds-step--next:hover{background:var(--muted)}
+.jf .ds-step--pending{background:var(--background);color:var(--muted-foreground);cursor:default!important}
+/* Progress (candidate): 8px, border track */
+.jf .ds-progress{height:8px;border-radius:999px;background:var(--border);overflow:hidden}
+/* Skeleton */
+.jf .ds-skel{display:block;border-radius:6px;background:var(--muted);animation:dsPulse 2s cubic-bezier(.4,0,.6,1) infinite}
+@keyframes dsPulse{50%{opacity:.5}}
+/* Map stand-ins (candidates): control 38px, toolbar 40px tools, callout */
+.jf .ds-mapctl{box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:0;border-radius:4px;background:var(--background);color:var(--primary);box-shadow:var(--shadow-md);cursor:pointer;transition:background-color .15s ease,color .15s ease,box-shadow .15s ease}
+.jf .ds-mapctl:hover:not(:disabled){background:var(--muted)}
+.jf .ds-mapctl:focus-visible{box-shadow:var(--shadow-md),0 0 0 3px var(--ring)}
+.jf .ds-mapctl:disabled{opacity:.5;cursor:default}
+.jf .ds-mapctl.on,.jf .ds-mapctl.on:hover{background:var(--primary);color:var(--primary-foreground)}
+.jf .ds-mapctl-group{display:flex;flex-direction:column;overflow:hidden;border-radius:4px;background:var(--background);box-shadow:var(--shadow-md)}
+.jf .ds-mapctl-group .ds-mapctl{border-radius:0;box-shadow:none}
+.jf .ds-mapctl-group .ds-mapctl + .ds-mapctl{border-top:1px solid var(--border)}
+.jf .ds-toolbar{box-sizing:border-box;display:flex;flex-direction:column;gap:6px;padding:6px;background:var(--background);border-radius:12px;box-shadow:var(--shadow-md)}
+.jf .ds-tool{box-sizing:border-box;position:relative;display:flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:0;border-radius:6px;background:var(--background);color:var(--muted-foreground);cursor:pointer;transition:background-color .15s ease,color .15s ease,box-shadow .15s ease}
+.jf .ds-tool:hover{background:var(--muted);color:var(--primary)}
+.jf .ds-tool:focus-visible,.jf .ds-tool:focus-within{box-shadow:0 0 0 3px var(--ring)}
+.jf .ds-tool.on,.jf .ds-tool.on:hover{background:var(--primary);color:var(--primary-foreground)}
+.jf .ds-callout{box-sizing:border-box;background:var(--background);border-radius:10px;box-shadow:var(--shadow-lg)}
+.jf .ds-callout-go{flex:none;width:32px;height:32px;border-radius:6px;background:var(--primary);color:var(--primary-foreground);display:flex;align-items:center;justify-content:center}
+/* Tooltip on the map tools */
+.jf .tipbtn[data-tip]:hover::after{content:attr(data-tip);position:absolute;left:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--foreground);color:#ffffff;font-size:12px;font-weight:400;line-height:16px;padding:6px 12px;border-radius:4px;white-space:nowrap;z-index:30;pointer-events:none;box-shadow:none;animation:jftipx .15s ease both}
+.jf .tipbtn[data-tip]:hover::before{content:"";position:absolute;left:calc(100% + 7px);top:50%;transform:translateY(-50%);border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:5px solid var(--foreground);z-index:30;pointer-events:none;animation:jftipx .15s ease both}
+
 </style>
 </helmet>
-<div class="jf" style="width: 1732px; height: 1100px; display: flex; flex-direction: column; font-family: 'DM Sans', system-ui, sans-serif; color: #12232b; background: #ffffff; overflow: hidden; position: relative">
+<div class="jf" style="width: 1732px; height: 1100px; display: flex; flex-direction: column; font-family: 'DM Sans', system-ui, sans-serif; color: #0C1D24; background: #ffffff; overflow: hidden; position: relative">
 
   <!-- Top bar -->
-  <header style="height: 72px; flex: none; background: #0b2d3b; display: flex; align-items: center; justify-content: space-between; padding: 0 20px 0 19px; box-sizing: border-box">
+  <header style="height: 72px; flex: none; background: #0B2D3B; display: flex; align-items: center; justify-content: space-between; padding: 0 20px 0 19px; box-sizing: border-box">
     <a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #ffffff" aria-label="Jordflytning home">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABcCAIAAABhkzVIAAAJLklEQVR4nO1cz2/iVh5/Xe2tGDjyQ4ILLGileIdRcpmOK01OJcqUS4NaxYcNc2goykwvTTS0c4pKNtnLTCNKeoDZg6OOSC/ejWBOU2k82j0ELRGRVmHJBaQxHIeaP2AP1rLGfrbfs59dVuJzAmOeHx++v973+33vvfeXPgAL/Be/+bUnMF9Y0DGDBR0zWNAxgwUdM1jQMYPfuvkwv5daSsToRIxO/M7n9SwlYgCAaCg4vaEvDsfSZCxNOte9gTjsdG+uujfvfpFcm+F7LsQdzEpq/R7DrKToRNzC14VWu3PdO/9ZEC7axOemgoN00In4+ipTYLM+ykNkwDJX3zv6jshQenBEWZiVVDGfY5ZTBMcciKPvuTOCA0JBmA4niJDxt1ev++KQ+LAqEKMjGg7+6aud+6sfkhpQBRdEA5Cio8Bmi/kcKRuhxUAcuSAawD4dfi/149OSE9qhROe65+j4U9iig07GXzw9iIQCpGajB6HluIuVYT0qZT9ea1aPXeACANDpzrd0FNjs4e5DslMxwPiXiTsPskJHMZ8r5nPEp2KAseQSHdjKIjsRJ6YyD8Cj4/4q46aO2Ec0HDS/SQEMOqLh4Mn+15jzIQNrEc3JfrFZPcZiBJUOv5dqVo+dC7SMEQ1j+6+T/SKbWYuEAj8+LaF/C5WOx9tb7vhUKHD/hmI+x2bW5Nd0Io6u4Eh0sJl0gc1iTYgslnASJVrHV2CzzApS3GxOh99LFfMP0GfjBPwUhXjnyX4R6vh+2P/a5zUXMXM6vtjc+BXVRMZSEkk6ZHsB/chHef6AIGImYVg0HJyHKINOxEzvOdx9qMfFWJqkczsokb6JdDze3jIdwh0Y51mL+ZyedRuIozsbW4irHiM6ouGgHt/ug07qCojBooHjG3c2ttBzJUZ0zI9oAACY5dvQ6+zHa1AuxtJk7+i77SeldxJGXULXdsyVaAAAoJ6STsYP9yAxhdBqb39TspBA06WDWb6FO5ajiIQCPq9HudKPhoMvnh6oIjSh1S5VapYrMrp0bM6TaMigE3Hl71QFyjaJkAGnIxoOOp3+tAAVHX7KAwDoi8NTvnn+s4CYT/V7qS82N8qndWhKCU7HvGmKDGY5Vebq07effln0UxS6pZSJkKuCA3HI8U3tPXA61u8xWBPtdHtX1zd9cdgXhwNxNHg7AgCoLJmfonyUJxIO+ChPNBSIhIJ0Mk4n4ujLM23sgMiFXCRmM2vTZzHLt6F0wGu0b9+8NI3whVZbuGgLrfbV9Q2WM1OBTsSZlVvM8u31VaP/YCCOfv/RJ1gjMyspZjm1mUkrmwSMR4NIB52MG3AhtNrnr16f8i/tUKBEp9vrdHtl7sxPUeurd9fvfQjlpVSpKt8e7j7UJlCnP3spGYuGggZyFwkFoqGg1hND6IAu2MbShOMbjnYVvJMkjm9yfDMaCm5m0nLyRv6o0+0pZZtIwoFOxpDoUPmUsTQpc/XvuTNS4mCKvjgsVWqlSo3NpIv5B5FQ4LNHxemn0XCQSMIhotEgAKUjOuvMrYV3RMDxTeHiUvU3ksrLQdeEMGUJBwEAA3H0+ZNvXWi4MYbsraZvCS4dIrD8K4QOH+URWu3PHhVd0w50NKvHpIbSuhsAXdGe8s10bmcOuQAAlCpVRwuUzrbKTf8BgtYnGgo2a2RK5R76ruoKMTqmTZLMyu2lREyOQVX3dLo9uUlSaLXftC4td0iSYoQ8HX4vdXf5VoHNYoXbMoRW+5RvCK3L/lts2SHCCEk6lCsiO3MCAHB84+DkOS4p9hkhRocTzWBlrl46qWFZSjoRb1aPUQooWoylSfiDj1QXsRsaouFgs3Z8uPuQeL22wGb/Uf+L8UJOhU63t/fnZ9YeB+0ZwaOjwGb/Xn/uXGYoEgr4MVnm+KYyCYIOqLPDoKOYzzkhFEpwfAOahjBGqVIbiCPcb0G1EpUOFxqgxtLkoPJceQXRKIylyedPvsV9HLQQhUSHO81gpUpNKcBsJo1uJoWLNq7KXFmjwx0uBuJI+XvkVTydiB9+hdqaUargeaXO9Y32ogkd91cZd0rW6dyO8u10Fc9m4EU2LcbSpHRSNb8PAKDf1W1Soz3cfYT4ADtQqQmdiCtX8cV8DrFZpcydIdrU1xf/hF43qdG60NkxEEelSk155cWzA9U9iM0qQJNS1cMbna5uXTrYTNqdGq1KTQpsVvsfREKB4jaSynB8E8WCCBeX0Ou6dOCWWqyhzNVVyS69nHCBzSK2RJZPTVyM0GrrJRx06RBalyjPtoOBOFIFGsbqebJf1PtIiTIHLzhOcco39D7SpYPjG043xu8ePVPm3FQWVAtmOYViU8fSRGjBLSUAYCCODAJfXTrG0oT7qy6L9sHxjfNXgvKK1oJqUdhEKq+UT3V3iun5FBlGnsW57WdaNYFaUC3WVxkUFyNctPVEW/VcFYzo6ItDTl/N7KBUqSJaUC0QBQQq2hzfMM7amkSlB5XnxC2IdtmKFeAgun/tfjHtElELEzr64tDUb2FBqyamFlSFSCiAYlC1BTOVU4fCfAlX5uoWsgl6UKkJQLOgKqDERGNpohQQbewLhTkd1rIJUGjVBNGCqoC4eVnZHoX4E5DyHRayCVpo1QTLgiohdxGa3jaVDvQWOtRsmLUE3OwIajWxs0S8j6AvMgWIaiIDlQ65y92ylxFabZWa4FpQFVB2uMjmQ7VENAZenYVZSVmooY+libYx/F8vf7KTPeh0b+5s/NH0Nh/lwdp0ildYEC7a2/hmVZXdAVYtqBJRtK/jbsDFLjtxfBNdFQEAQktthi1bUCV8lAfaoGETVvbglyq1vSPU2tf2N+qNisS6mfS3dFiGxSMJytzZp18+NrWsWjWxaUGVgPa62YT1ExrOXwl3slsG3hfq4SzEoHpwIo9r6xi1vjhM53b0Vr1aD2ffgiqBvn0SHXZPleuLw+0npb2jZyox0aoJEQuqhBPVYjKH7JW5M6WYQNWEeJnCWluHMYidOSiLSfrBDjQQJGhB//dE/BYqU7hxyB6wHYOqQGRjExRuHMFIyoK60B3vBh1yfsDOEYzyxpn/7yMYtfBT1FIyRidi8lYnOdBWOgjZGV1d34ylSaf77073xubeIVy4Ssf8Y3Ga7QwWdMxgQccMFnTM4D/6ei2MV0sR8QAAAABJRU5ErkJggg==" alt="" style="width: 45px; height: 46px; display: block">
       <span style="display: flex; flex-direction: column; gap: 1px">
@@ -202,33 +365,33 @@ a{color:#31815f}a:hover{color:#226146}
         <span style="font-size: 10px; line-height: 12px; opacity: 0.85">Danmarks Miljøportal</span>
       </span>
     </a>
-    <div style="display: flex; align-items: center; gap: 18px">
-      <button class="langbtn" aria-label="Language: English" style="height: 36px; padding: 0 12px; border: 1px solid rgba(255,255,255,0.28); border-radius: 6px; background: transparent; color: #ffffff; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <button class="ds-navbtn" aria-label="Language: English" style="border: 1px solid rgba(255,255,255,0.28); padding: 0 12px">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path></svg>
         ENG
       </button>
-      <button aria-label="Apps" style="width: 32px; height: 32px; border: 0; background: transparent; color: #ffffff; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+      <button class="ds-navbtn" aria-label="Apps" style="width: 36px; padding: 0">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><circle cx="3" cy="3" r="1.4"></circle><circle cx="8" cy="3" r="1.4"></circle><circle cx="13" cy="3" r="1.4"></circle><circle cx="3" cy="8" r="1.4"></circle><circle cx="8" cy="8" r="1.4"></circle><circle cx="13" cy="8" r="1.4"></circle><circle cx="3" cy="13" r="1.4"></circle><circle cx="8" cy="13" r="1.4"></circle><circle cx="13" cy="13" r="1.4"></circle></svg>
       </button>
-      <button aria-label="Account: JN" style="width: 40px; height: 40px; border-radius: 50%; border: 0; background: #ffffff; color: #0b2d3b; font-size: 14px; font-weight: 600; cursor: pointer; padding: 0">JN</button>
+      <button class="ds-avatar" aria-label="Account: JN">JN</button>
     </div>
   </header>
 
   <div style="flex: 1; display: flex; min-height: 0">
 
     <!-- Left panel -->
-    <aside style="width: 640px; flex: none; display: flex; flex-direction: column; border-right: 1px solid #e9edf2; box-sizing: border-box; min-height: 0">
-      <div style="height: 68px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid #e9edf2; box-sizing: border-box">
-        <button class="iconbtn" aria-label="Back" onClick="{{goBack}}" style="width: 29px; height: 29px; border: 1px solid #c7d4d9; border-radius: 4px; background: #ffffff; color: #12232b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+    <aside style="width: 640px; flex: none; display: flex; flex-direction: column; border-right: 1px solid var(--border); box-sizing: border-box; min-height: 0">
+      <div style="height: 68px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid var(--border); box-sizing: border-box">
+        <button class="ds-back" aria-label="Back" onClick="{{goBack}}">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>
         </button>
-        <div style="display: flex; align-items: center; gap: 18px">
+        <div style="display: flex; align-items: center; gap: 10px">
           <sc-if value="{{showShare}}" hint-placeholder-val="{{ true }}">
-          <button class="ghost" onClick="{{openShare}}" style="height: 37px; padding: 0 14px; border: 1px solid #c7d4d9; border-radius: 6px; background: #ffffff; color: #12232b; font-size: 14px; display: flex; align-items: center; gap: 8px; cursor: pointer">Share
+          <button class="ds-btn ds-btn--outline" onClick="{{openShare}}">Share
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 6-7 6"></path><path d="M21 11H11a7 7 0 0 0-7 7v1"></path></svg>
           </button>
           </sc-if>
-          <button class="iconbtn" aria-label="More options" style="width: 28px; height: 32px; border: 0; border-radius: 4px; background: transparent; color: #12232b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+          <button class="ds-btn ds-btn--ghost ds-btn--icon" aria-label="More options">
             <svg width="4" height="16" viewBox="0 0 4 16" fill="currentColor"><circle cx="2" cy="2" r="1.6"></circle><circle cx="2" cy="8" r="1.6"></circle><circle cx="2" cy="14" r="1.6"></circle></svg>
           </button>
         </div>
@@ -237,68 +400,68 @@ a{color:#31815f}a:hover{color:#226146}
       <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; padding: 24px 20px 0; box-sizing: border-box; min-height: 0">
         <sc-if value="{{loading}}" hint-placeholder-val="{{ false }}">
           <div class="skelwrap" aria-busy="true" aria-label="Loading" style="display: flex; flex-direction: column; padding-top: 8px">
-            <span class="skel" style="width: 192px; height: 24px"></span>
-            <span class="skel" style="width: 279px; height: 24px; margin-top: 30px"></span>
-            <span class="skel" style="width: 236px; height: 24px; margin-top: 8px"></span>
+            <span class="ds-skel" style="width: 192px; height: 24px"></span>
+            <span class="ds-skel" style="width: 279px; height: 24px; margin-top: 30px"></span>
+            <span class="ds-skel" style="width: 236px; height: 24px; margin-top: 8px"></span>
           </div>
         </sc-if>
 
         <sc-if value="{{notLoading}}" hint-placeholder-val="{{ true }}">
-        <div class="rise" style="font-size: 14px; color: #6b7a80; line-height: 20px">Screening tool</div>
-        <h1 class="rise r2" style="margin: 14px 0 0; font-size: 22px; font-weight: 500; line-height: 30px; letter-spacing: -0.2px; color: #12232b">{{headTitle}}</h1>
-        <p class="rise r3" style="margin: 10px 0 0; font-size: 14px; line-height: 20px; color: #2b3a40">{{headText}}</p>
+        <div class="rise" style="font-size: 14px; color: var(--muted-foreground); line-height: 20px">Screening tool</div>
+        <h1 class="rise r2" style="margin: 14px 0 0; font-size: 20px; font-weight: 500; line-height: 28px; color: var(--foreground)">{{headTitle}}</h1>
+        <p class="rise r3" style="margin: 10px 0 0; font-size: 14px; line-height: 20px; color: var(--foreground)">{{headText}}</p>
         </sc-if>
 
         <!-- LOCATE STATE -->
         <sc-if value="{{showLocatePanel}}" hint-placeholder-val="{{ true }}">
-          <div style="margin-top: 22px; display: flex; align-items: center; gap: 7px; font-size: 15px; line-height: 20px; color: #6b7a80">
+          <div class="ds-infonote" style="margin-top: 22px">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg>
             You have to find location before you can progress
           </div>
           <div style="margin-top: 32px; position: relative">
-            <div style="{{searchBoxStyle}}">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5f6e74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+            <div class="ds-group">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#55666D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
               <label for="jf-search" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Find your location on the map</label>
-              <input id="jf-search" type="text" autocomplete="off" placeholder="Find your location on the map" value="{{query}}" onChange="{{onQuery}}" onFocus="{{onFocus}}" onBlur="{{onBlur}}" onKeyDown="{{onKey}}" style="flex: 1; min-width: 0; border: 0; outline: none; background: transparent; font-size: 15px; color: #12232b; height: 38px; padding: 0">
+              <input id="jf-search" type="text" autocomplete="off" placeholder="Find your location on the map" value="{{query}}" onChange="{{onQuery}}" onFocus="{{onFocus}}" onBlur="{{onBlur}}" onKeyDown="{{onKey}}">
               <sc-if value="{{showClear}}" hint-placeholder-val="{{ false }}">
-                <button aria-label="Clear search" onMouseDown="{{clearQuery}}" style="width: 28px; height: 28px; border: 0; background: transparent; color: #5f6e74; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                <button class="ds-btn ds-btn--ghost ds-btn--icon-xs" aria-label="Clear search" onMouseDown="{{clearQuery}}" style="margin-right: 6px; color: var(--muted-foreground)">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
                 </button>
               </sc-if>
             </div>
 
             <sc-if value="{{showDrop}}" hint-placeholder-val="{{ false }}">
-              <div role="listbox" aria-label="Address suggestions" style="position: absolute; left: 0; right: 0; top: 46px; z-index: 5; background: #ffffff; border-radius: 6px; box-shadow: 0 6px 20px rgba(11,45,59,0.14), 0 0 0 1px rgba(11,45,59,0.06); max-height: 206px; overflow-y: auto; padding: 4px 0">
+              <div class="ds-menu" role="listbox" aria-label="Address suggestions" style="position: absolute; left: 0; right: 0; top: 42px; z-index: 5; max-height: 206px; overflow-y: auto">
                 <sc-for list="{{suggestions}}" as="s" hint-placeholder-count="5">
-                  <button class="sugg" role="option" onMouseDown="{{s.pick}}" style="display: block; width: calc(100% - 8px); margin: 0 4px; text-align: left; border: 0; background: {{s.bg}}; border-radius: 4px; font-size: 15px; color: #12232b; height: 40px; padding: 0 12px; cursor: pointer">{{s.label}}</button>
+                  <button class="{{s.cls}}" role="option" onMouseDown="{{s.pick}}">{{s.label}}</button>
                 </sc-for>
                 <sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
-                  <div style="font-size: 14px; color: #6b7a80; padding: 10px 16px">No addresses found</div>
+                  <div class="ds-menu-empty">No addresses found</div>
                 </sc-if>
               </div>
             </sc-if>
 
             <!-- Progress / ready card: one card, two states that crossfade -->
-            <div class="pcard" aria-live="polite" style="margin-top: 16px; display: grid; background: #f2f5f7; border-radius: 8px; min-height: 87px">
-              <div class="{{pcProgressCls}}" aria-hidden="{{pcProgressHidden}}" style="padding: 22px 20px 20px 21px">
+            <div class="pcard" aria-live="polite" style="margin-top: 16px; display: grid; background: var(--muted); border-radius: 12px; min-height: 88px">
+              <div class="{{pcProgressCls}}" aria-hidden="{{pcProgressHidden}}" style="padding: 20px 18px 18px">
                 <div style="display: flex; align-items: center; gap: 12px">
-                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5f6e74" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 8.5l3.5 3.5-3.5 3.5"></path></svg>
-                  <span style="flex: 1; font-size: 16px; line-height: 22px; color: #12232b">Get closer to where you wish to dig</span>
-                  <span style="font-size: 14px; color: #7b8a90">Zoom in</span>
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#55666D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 8.5l3.5 3.5-3.5 3.5"></path></svg>
+                  <span style="flex: 1; font-size: 16px; line-height: 22px; color: #0C1D24">Get closer to where you wish to dig</span>
+                  <span style="font-size: 14px; color: #55666D">Zoom in</span>
                 </div>
-                <div style="margin-top: 14px; height: 7px; border-radius: 4px; background: #dae1e8; overflow: hidden">
+                <div class="ds-progress" style="margin-top: 14px">
                   <div style="{{pcFillStyle}}"></div>
                 </div>
               </div>
-              <div class="{{pcReadyCls}}" aria-hidden="{{pcReadyHidden}}" style="display: flex; align-items: center; gap: 20px; padding: 18px 24px 18px 26px">
+              <div class="{{pcReadyCls}}" aria-hidden="{{pcReadyHidden}}" style="display: flex; align-items: center; gap: 20px; padding: 16px 18px">
                 <div style="flex: 1; min-width: 0">
                   <div style="display: flex; align-items: center; gap: 10px">
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#31815f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.3l2.8 2.8L16.3 9.6"></path></svg>
-                    <span style="font-size: 16px; font-weight: 500; line-height: 22px; color: #12232b">You’re ready to proceed</span>
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#31815F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.3l2.8 2.8L16.3 9.6"></path></svg>
+                    <span style="font-size: 16px; font-weight: 500; line-height: 22px; color: #0C1D24">You’re ready to proceed</span>
                   </div>
-                  <div style="margin-top: 4px; font-size: 13px; line-height: 18px; color: #5f6e74">You’re close enough to draw the area you want to dig</div>
+                  <div style="margin-top: 4px; font-size: 13px; line-height: 18px; color: #55666D">You’re close enough to draw the area you want to dig</div>
                 </div>
-                <button class="nextbtn-on beginreveal" onClick="{{beginAnalyse}}" tabIndex="{{readyTab}}" style="height: 36px; padding: 0 16px 0 22px; border: 0; border-radius: 4px; background: #0b2d3b; color: #ffffff; font-size: 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; flex: none">Begin screening
+                <button class="ds-btn ds-btn--primary beginreveal" onClick="{{beginAnalyse}}" tabIndex="{{readyTab}}">Begin screening
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
                 </button>
               </div>
@@ -306,22 +469,22 @@ a{color:#31815f}a:hover{color:#226146}
 
             <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 20px">
               <div style="display: flex; gap: 22px; align-items: center">
-                <span style="width: 40px; height: 40px; border-radius: 50%; background: #eef1f4; display: flex; align-items: center; justify-content: center; flex: none">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12232b" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+                <span class="ds-featured ds-featured--light ds-featured--md">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0C1D24" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
                 </span>
-                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 600; color: #2b3a40">Search the location</div><div style="color: #2b3a40">Use the search to find city, land or address</div></div>
+                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 500; color: var(--foreground)">Search the location</div><div style="color: var(--muted-foreground)">Use the search to find city, land or address</div></div>
               </div>
               <div style="display: flex; gap: 22px; align-items: center">
-                <span style="width: 40px; height: 40px; border-radius: 50%; background: #eef1f4; display: flex; align-items: center; justify-content: center; flex: none">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12232b" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"></path><path d="M9 4v13.5M15 6.5V20"></path></svg>
+                <span class="ds-featured ds-featured--light ds-featured--md">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0C1D24" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"></path><path d="M9 4v13.5M15 6.5V20"></path></svg>
                 </span>
-                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 600; color: #2b3a40">Use the map</div><div style="color: #2b3a40">Use the map to zoom in</div></div>
+                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 500; color: var(--foreground)">Use the map</div><div style="color: var(--muted-foreground)">Use the map to zoom in</div></div>
               </div>
               <div style="display: flex; gap: 22px; align-items: center">
-                <span style="width: 40px; height: 40px; border-radius: 50%; background: #eef1f4; display: flex; align-items: center; justify-content: center; flex: none">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12232b" stroke-width="1.8" stroke-linejoin="round"><path d="M6 5l13 3-4 11-8-4z"></path><rect x="4" y="3" width="4" height="4" fill="#eef1f4"></rect><rect x="17" y="6" width="4" height="4" fill="#eef1f4"></rect><rect x="13" y="17" width="4" height="4" fill="#eef1f4"></rect><rect x="5" y="13" width="4" height="4" fill="#eef1f4"></rect></svg>
+                <span class="ds-featured ds-featured--light ds-featured--md">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0C1D24" stroke-width="1.8" stroke-linejoin="round"><path d="M6 5l13 3-4 11-8-4z"></path><rect x="4" y="3" width="4" height="4" fill="#F2F5F7"></rect><rect x="17" y="6" width="4" height="4" fill="#F2F5F7"></rect><rect x="13" y="17" width="4" height="4" fill="#F2F5F7"></rect><rect x="5" y="13" width="4" height="4" fill="#F2F5F7"></rect></svg>
                 </span>
-                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 600; color: #2b3a40">Start drawing</div><div style="color: #2b3a40">Draw the area you want to dig</div></div>
+                <div style="font-size: 15px; line-height: 20px"><div style="font-weight: 500; color: var(--foreground)">Start drawing</div><div style="color: var(--muted-foreground)">Draw the area you want to dig</div></div>
               </div>
             </div>
           </div>
@@ -331,18 +494,18 @@ a{color:#31815f}a:hover{color:#226146}
         <sc-if value="{{isDraw}}" hint-placeholder-val="{{ false }}">
           <div class="panelin" style="margin-top: 22px">
             <div>
-              <button class="tlink" onClick="{{backToSearch}}" style="font-size: 15px; font-weight: 400">Set new location for digginarea</button>
+              <button class="ds-link" onClick="{{backToSearch}}">Set new location for digginarea</button>
             </div>
 
-            <div style="margin: 34px -20px 0">
+            <div class="ds-steps" style="margin: 34px -20px 0">
               <sc-for list="{{steps}}" as="stp" hint-placeholder-count="4">
-                <section style="border-bottom: 1px solid #e9edf2">
+                <section>
                   <h2 style="margin: 0">
-                    <button aria-expanded="{{stp.expandedStr}}" disabled="{{stp.disabled}}" onClick="{{stp.toggle}}" class="stephead" style="{{stp.headStyle}}">
+                    <button aria-expanded="{{stp.expandedStr}}" disabled="{{stp.disabled}}" onClick="{{stp.toggle}}" class="{{stp.headClass}}">
                       <span>{{stp.label}}</span>
-                      <span style="display: flex; align-items: center; gap: 18px; flex: none">
+                      <span style="display: flex; align-items: center; gap: 12px; flex: none">
                         <sc-if value="{{stp.done}}" hint-placeholder-val="{{ false }}">
-                          <span class="donepill">Complete</span>
+                          <span class="ds-badge ds-badge--success">Complete</span>
                         </sc-if>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="{{stp.chevStyle}}"><path d="M6 9l6 6 6-6"></path></svg>
                       </span>
@@ -352,30 +515,30 @@ a{color:#31815f}a:hover{color:#226146}
                     <div class="stepinner">
                       <div style="padding: 26px 20px 24px">
                         <sc-if value="{{stp.isFirst}}" hint-placeholder-val="{{ true }}">
-                          <p style="margin: 0; font-size: 15px; line-height: 20px; color: #2b3a40">Draw an area on the map to mark the areas you want to dig.</p>
-                          <div style="margin-top: 26px; background: #f2f5f7; border-radius: 10px; padding: 0 12px">
-                            <div style="position: relative; height: 50px; display: flex; align-items: center; justify-content: space-between; padding: 0 0 0 8px">
-                              <div style="display: flex; align-items: center; gap: 8px">
-                                <span aria-hidden="true" style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #0b2d3b; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 12 12)"><path d="M9 2.5h6"></path><path d="M12 2.5v9"></path><path d="M7.5 11.5h9v3.6c0 3-2 5.4-4.5 6.4c-2.5-1-4.5-3.4-4.5-6.4z"></path></g></svg></span>
-                                <h3 style="margin: 0; font-size: 15px; line-height: 20px; font-weight: 600; color: #12232b">Digging sites</h3>
-                                <span style="font-size: 13px; color: #6b7a80">{{sitesMeta}}</span>
+                          <p style="margin: 0; font-size: 15px; line-height: 22px; color: var(--foreground)">Draw an area on the map to mark the areas you want to dig.</p>
+                          <div class="ds-surface" style="margin-top: 20px">
+                            <div class="ds-surface-header">
+                              <div style="display: flex; align-items: center; gap: 12px; min-width: 0">
+                                <span aria-hidden="true" class="ds-featured ds-featured--dark ds-featured--sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 12 12)"><path d="M9 2.5h6"></path><path d="M12 2.5v9"></path><path d="M7.5 11.5h9v3.6c0 3-2 5.4-4.5 6.4c-2.5-1-4.5-3.4-4.5-6.4z"></path></g></svg></span>
+                                <h3 class="ds-surface-title">Digging sites</h3>
+                                <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground); white-space: nowrap">{{sitesMeta}}</span>
                               </div>
-                              <button class="iconbtn" aria-label="More actions for digging sites" aria-haspopup="menu" aria-expanded="{{siteMenuStr}}" onClick="{{toggleSiteMenu}}" onKeyDown="{{siteMenuKey}}" style="{{siteMenuBtnStyle}}">
+                              <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="More actions for digging sites" aria-haspopup="menu" aria-expanded="{{siteMenuStr}}" onClick="{{toggleSiteMenu}}" onKeyDown="{{siteMenuKey}}">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.9"></circle><circle cx="12" cy="12" r="1.9"></circle><circle cx="19" cy="12" r="1.9"></circle></svg>
                               </button>
                               <sc-if value="{{siteMenu}}" hint-placeholder-val="{{ false }}">
                                 <div onClick="{{closeSiteMenu}}" style="position: fixed; inset: 0; z-index: 39"></div>
-                                <div class="drop" role="menu" aria-label="Digging site actions" style="position: absolute; right: 0; top: 44px; z-index: 40; width: 196px; background: #ffffff; border-radius: 8px; box-shadow: 0 8px 24px rgba(11,45,59,0.18), 0 0 0 1px rgba(11,45,59,0.06); padding: 4px">
-                                  <button class="sugg" role="menuitem" disabled="{{noDrawn}}" onClick="{{downloadSites}}" style="{{siteItemStyle}}">
+                                <div class="ds-menu" role="menu" aria-label="Digging site actions" style="position: absolute; right: 0; top: 38px; z-index: 40; width: 196px">
+                                  <button class="ds-menu-item" role="menuitem" disabled="{{noDrawn}}" onClick="{{downloadSites}}">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"></path><path d="M7 10.5l5 5 5-5"></path><path d="M5 19.5h14"></path></svg>
                                     Download
                                   </button>
-                                  <button class="sugg" role="menuitem" disabled="{{noDrawn}}" onClick="{{shareSites}}" style="{{siteItemStyle}}">
+                                  <button class="ds-menu-item" role="menuitem" disabled="{{noDrawn}}" onClick="{{shareSites}}">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5.5" r="2.5"></circle><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="18.5" r="2.5"></circle><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1"></path></svg>
                                     Share
                                   </button>
-                                  <div style="height: 1px; background: #e9edf2; margin: 4px 6px"></div>
-                                  <button class="sugg" role="menuitem" onClick="{{deleteAllSites}}" style="display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #b42318; height: 38px; padding: 0 10px; cursor: pointer">
+                                  <div class="ds-menu-sep"></div>
+                                  <button class="ds-menu-item ds-menu-item--destructive" role="menuitem" onClick="{{deleteAllSites}}">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 7h15"></path><path d="M9.5 7V4.8h5V7"></path><path d="M6.5 7l.9 12.2h9.2L17.5 7"></path></svg>
                                     Delete all
                                   </button>
@@ -385,44 +548,44 @@ a{color:#31815f}a:hover{color:#226146}
                             <sc-if value="{{hasSites}}" hint-placeholder-val="{{ false }}">
                               <div style="padding-top: 0">
 
-                <div style="background: #ffffff; border-radius: 8px; box-shadow: 0 1px 3px rgba(11,45,59,0.08)">
+                <div class="ds-card-flat">
                   <sc-for list="{{sites}}" as="site" hint-placeholder-count="1">
                     <div class="{{site.rowCls}}" style="{{site.rowStyle}}">
-                      <span class="rownum" aria-label="Digging site {{site.num}}">{{site.num}}</span>
+                      <span class="ds-featured ds-featured--dark ds-featured--xxs" aria-label="Digging site {{site.num}}">{{site.num}}</span>
                       <sc-if value="{{site.pending}}" hint-placeholder-val="{{ false }}">
                         <span class="pendtext" role="status">{{site.pendText}}</span>
                       </sc-if>
                       <sc-if value="{{site.notPending}}" hint-placeholder-val="{{ true }}">
                       <label style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)" for="{{site.nameId}}">Name of {{site.code}}</label>
-                      <input id="{{site.nameId}}" type="text" value="{{site.name}}" placeholder="{{site.placeholder}}" readOnly="{{site.ro}}" disabled="{{site.pending}}" onChange="{{site.onName}}" class="sitefield" style="width: 174px; height: 36px; box-sizing: border-box; border: 1px solid #c7d4d9; border-radius: 4px; padding: 0 12px; font-size: 14px; color: #12232b; outline: none; background: #ffffff">
-                      <div class="sitefield" style="width: 124px; height: 36px; box-sizing: border-box; border: 1px solid #c7d4d9; border-radius: 4px; display: flex; align-items: center; padding: 0 10px 0 0; background: #ffffff">
+                      <input id="{{site.nameId}}" type="text" value="{{site.name}}" placeholder="{{site.placeholder}}" readOnly="{{site.ro}}" disabled="{{site.pending}}" onChange="{{site.onName}}" class="sitefield ds-input" style="width: 174px">
+                      <div class="sitefield ds-group" style="width: 124px">
                         <label style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)" for="{{site.depthId}}">Depth in metres for {{site.code}}</label>
-                        <input id="{{site.depthId}}" type="text" inputMode="decimal" value="{{site.depth}}" placeholder="0" readOnly="{{site.ro}}" disabled="{{site.pending}}" onChange="{{site.onDepth}}" onKeyDown="{{site.onDepthKey}}" style="flex: 1; min-width: 0; height: 34px; border: 0; outline: none; background: transparent; padding: 0 0 0 16px; font-size: 14px; color: #12232b">
-                        <span style="font-size: 12px; color: #6b7a80">Depth m</span>
+                        <input id="{{site.depthId}}" type="text" inputMode="decimal" value="{{site.depth}}" placeholder="0" readOnly="{{site.ro}}" disabled="{{site.pending}}" onChange="{{site.onDepth}}" onKeyDown="{{site.onDepthKey}}">
+                        <span class="ds-group-text">Depth m</span>
                       </div>
                       </sc-if>
-                      <div class="{{site.sizeCls}}" style="width: 96px; flex: none; white-space: nowrap; display: flex; align-items: baseline; gap: 4px; padding: 0 0 0 4px; font-variant-numeric: tabular-nums" aria-label="Size in square metres">
-                        <span style="font-size: 14px; font-weight: 500; color: #12232b">{{site.sizeLabel}}</span>
-                        <span style="font-size: 13px; color: #6b7a80">m²</span>
+                      <div class="{{site.sizeCls}}" style="width: 96px; flex: none; white-space: nowrap; display: flex; align-items: baseline; gap: 4px; padding: 0 0 0 4px; font-variant-numeric: tabular-nums" aria-label="Volume in cubic metres">
+                        <span style="font-size: 15px; line-height: 22px; color: var(--foreground)">{{site.sizeLabel}}</span>
+                        <span style="font-size: 15px; line-height: 22px; color: var(--foreground)">m³</span>
                       </div>
                       <div style="flex: 1; display: flex; justify-content: flex-end; align-items: center; gap: 6px">
                         <sc-if value="{{site.pending}}" hint-placeholder-val="{{ false }}">
-                          <button aria-label="Finish drawing" title="Finish drawing" disabled="{{site.cantFinish}}" onClick="{{site.finish}}" class="iconbtn" style="{{site.finishStyle}}">
+                          <button aria-label="Finish drawing" title="Finish drawing" disabled="{{site.cantFinish}}" onClick="{{site.finish}}" class="ds-btn ds-btn--ghost ds-btn--icon-sm" style="{{site.finishStyle}}">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
                           </button>
                         </sc-if>
                         <sc-if value="{{site.notPending}}" hint-placeholder-val="{{ true }}">
-                          <button aria-label="Download {{site.code}}" title="Download" onClick="{{site.download}}" class="iconbtn" style="width: 30px; height: 30px; border: 0; border-radius: 4px; background: transparent; color: #5f6e74; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                          <button aria-label="Download {{site.code}}" title="Download" onClick="{{site.download}}" class="ds-btn ds-btn--ghost ds-btn--icon-sm">
                             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"></path><path d="M7 10.5l5 5 5-5"></path><path d="M5 19.5h14"></path></svg>
                           </button>
                         </sc-if>
                         <sc-if value="{{site.editing}}" hint-placeholder-val="{{ true }}">
-                          <button aria-label="Remove digging site" onClick="{{site.remove}}" class="iconbtn" style="width: 30px; height: 30px; border: 0; border-radius: 4px; background: transparent; color: #5f6e74; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                          <button aria-label="Remove digging site" onClick="{{site.remove}}" class="ds-btn ds-btn--ghost ds-btn--icon-sm">
                             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"></path></svg>
                           </button>
                         </sc-if>
                         <sc-if value="{{site.done}}" hint-placeholder-val="{{ false }}">
-                          <button class="tlink" onClick="{{site.change}}" style="padding: 0 4px">Change</button>
+                          <button class="ds-btn ds-btn--link-brand ds-btn--sm" onClick="{{site.change}}">Change</button>
                         </sc-if>
                       </div>
                     </div>
@@ -431,62 +594,52 @@ a{color:#31815f}a:hover{color:#226146}
               
                               </div>
                             </sc-if>
-                            <div style="height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px 0 20px">
-                              <button class="tlink" onClick="{{addSite}}" style="display: inline-flex; align-items: center; gap: 6px">
+                            <div class="ds-surface-footer">
+                              <button class="ds-btn ds-btn--link-brand" onClick="{{addSite}}" style="margin-left: -12px">
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
                                 Add digging site
                               </button>
-                              <span style="font-size: 13px; color: #7b8a90">Total volume&nbsp; <span style="color: #4a5a60; font-variant-numeric: tabular-nums">{{totalLabel}} m³</span></span>
+                              <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground)">Total volume&nbsp; <span style="color: var(--foreground); font-variant-numeric: tabular-nums">{{totalLabel}} m³</span> · <span style="color: var(--foreground); font-variant-numeric: tabular-nums">≈ {{totalTons}} t</span></span>
                             </div>
                           </div>
                         </sc-if>
                         <sc-if value="{{stp.isAddress}}" hint-placeholder-val="{{ false }}">
                           <div class="addrin">
                             <sc-if value="{{addrMulti}}" hint-placeholder-val="{{ true }}">
-                              <div role="status" style="display: flex; gap: 16px; align-items: flex-start; border: 1px solid #c7d4d9; border-radius: 8px; padding: 16px 20px 16px 18px; background: #ffffff; box-shadow: 0 1px 3px rgba(11,45,59,0.08); margin-bottom: 8px">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b2d3b" stroke-width="2" stroke-linecap="round" style="flex: none; margin-top: 1px" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="M12 11v6"></path><path d="M12 7.4h.01" stroke-width="2.6"></path></svg>
-                                <div>
-                                  <div style="font-size: 15px; line-height: 21px; font-weight: 600; color: #2b3a40">{{addrNoticeTitle}}</div>
-                                  <div style="margin-top: 4px; font-size: 15px; line-height: 21px; color: #5f6e74">Select one or more to continue</div>
-                                </div>
-                              </div>
+                              <p style="margin: 0 0 4px; font-size: 15px; line-height: 22px; color: var(--foreground)">{{addrNoticeTitle}}. Select one or more to continue.</p>
                             </sc-if>
                             <sc-if value="{{addrSingle}}" hint-placeholder-val="{{ false }}">
-                              <p style="margin: 0; font-size: 15px; line-height: 20px; color: #2b3a40">{{addrIntro}}</p>
+                              <p style="margin: 0 0 4px; font-size: 15px; line-height: 22px; color: var(--foreground)">{{addrIntro}}</p>
                             </sc-if>
                             <sc-for list="{{addrGroups}}" as="ag" hint-placeholder-count="2">
-                              <div class="fieldgrp" onMouseEnter="{{ag.hoverOn}}" onMouseLeave="{{ag.hoverOff}}">
-                                <div style="display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px 8px 16px">
-                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2f7d58" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M4 6.5l6.5-2.5 9.5 3.5-1.5 11-9 2.5-5.5-4z"></path></svg>
-                                  <div style="flex: 1; min-width: 0">
-                                    <div style="font-size: 15px; line-height: 20px; font-weight: 600; color: #12232b">{{ag.name}}</div>
-                                    <div style="margin-top: 2px; font-size: 12px; line-height: 16px; color: #6b7a80">{{ag.meta}}</div>
-                                  </div>
-                                  <sc-if value="{{ag.showAll}}" hint-placeholder-val="{{ false }}">
-                                    <button class="tlink" onClick="{{ag.toggleAll}}" style="flex: none; font-size: 13px; padding: 2px 0">{{ag.allLabel}}</button>
-                                  </sc-if>
+                              <div class="fieldgrp ds-surface" onMouseEnter="{{ag.hoverOn}}" onMouseLeave="{{ag.hoverOff}}">
+                                <div class="ds-surface-header">
+                                  <span class="ds-surface-title" style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{ag.name}}</span>
+                                  <span style="flex: none; font-size: 14px; line-height: 20px; color: var(--muted-foreground)">{{ag.meta}}</span>
                                 </div>
+                                <div class="ds-card-flat addrlist">
                                 <sc-for list="{{ag.items}}" as="ai" hint-placeholder-count="3">
                                   <button class="addrrow" role="checkbox" aria-checked="{{ai.checkedStr}}" onClick="{{ai.toggle}}" onMouseEnter="{{ai.hoverOn}}" onMouseLeave="{{ai.hoverOff}}">
-                                    <span class="{{ai.boxCls}}"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+                                    <span class="{{ai.boxCls}}"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
                                     <svg width="13" height="16" viewBox="0 0 24 30" aria-hidden="true" style="flex: none; margin-left: -4px"><path d="M12 1C6 1 1.5 5.5 1.5 11.3c0 7.2 8.6 16.3 9.7 17.4a1.1 1.1 0 0 0 1.6 0c1.1-1.1 9.7-10.2 9.7-17.4C22.5 5.5 18 1 12 1z" fill="{{ai.pinFill}}"></path><circle cx="12" cy="11" r="4" fill="#ffffff"></circle></svg>
-                                    <span style="display: flex; flex-direction: column; gap: 1px; min-width: 0; padding: 8px 0">
-                                      <span style="color: #12232b">{{ai.address}}</span>
-                                      <span class="addrsub" style="font-size: 12px; line-height: 16px; color: #7b8a90">{{ai.sub}}</span>
+                                    <span style="display: flex; flex-direction: column; gap: 0; min-width: 0">
+                                      <span style="color: var(--foreground)">{{ai.address}}</span>
+                                      <span class="addrsub" style="font-size: 14px; line-height: 20px; color: var(--muted-foreground)">{{ai.sub}}</span>
                                     </span>
                                   </button>
                                 </sc-for>
+                                </div>
                               </div>
                             </sc-for>
                           </div>
                         </sc-if>
                         <sc-if value="{{stp.isPlaceholder}}" hint-placeholder-val="{{ false }}">
-                          <div style="border: 1px dashed #c7d4d9; border-radius: 8px; padding: 22px; font-size: 14px; color: #6b7a80; text-align: center">[Content for “{{stp.title}}” — not designed yet]</div>
+                          <div style="border: 1px dashed var(--border); border-radius: 10px; padding: 22px; font-size: 14px; line-height: 20px; color: var(--muted-foreground); text-align: center">[Content for “{{stp.title}}” — not designed yet]</div>
                         </sc-if>
                         <sc-if value="{{stp.showNext}}" hint-placeholder-val="{{ true }}">
-                          <div style="margin-top: 34px; display: flex; justify-content: flex-end; align-items: center; gap: 22px">
-                            <span style="font-size: 13px; color: #2b3a40">{{stp.hint}}</span>
-                            <button disabled="{{stp.nextDisabled}}" onClick="{{stp.next}}" class="{{stp.nextClass}}" style="{{stp.nextStyle}}">Next step
+                          <div style="margin-top: 24px; display: flex; justify-content: flex-end; align-items: center; gap: 12px">
+                            <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground)">{{stp.hint}}</span>
+                            <button disabled="{{stp.nextDisabled}}" onClick="{{stp.next}}" class="ds-btn ds-btn--primary">Next step
                               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
                             </button>
                           </div>
@@ -500,7 +653,7 @@ a{color:#31815f}a:hover{color:#226146}
           </div>
         </sc-if>
 
-        <div style="margin-top: auto; padding: 32px 0 18px; text-align: center; font-size: 12px; color: #6b7a80">2025 © Danmarks Miljøportal &nbsp;·&nbsp; Jordflytning - Jordhub</div>
+        <div style="margin-top: auto; padding: 32px 0 18px; text-align: center; font-size: 12px; line-height: 16px; color: var(--muted-foreground)">2025 © Danmarks Miljøportal &nbsp;·&nbsp; Jordflytning - Jordhub</div>
       </div>
     </aside>
 
@@ -550,20 +703,23 @@ a{color:#31815f}a:hover{color:#226146}
                   <polygon points="{{ra.pts}}" style="{{ra.style}}"></polygon>
                 </sc-for>
               </g>
+              <sc-if value="{{showDim}}" hint-placeholder-val="{{ false }}">
+                <path d="{{dimPath}}" fill-rule="evenodd" style="fill: rgba(242,245,247,0.62); transition: opacity .3s ease"></path>
+              </sc-if>
               <sc-for list="{{parcelHi}}" as="ph" hint-placeholder-count="0">
                 <polygon points="{{ph.pts}}" style="{{ph.style}}"></polygon>
               </sc-for>
               <sc-for list="{{polys}}" as="p" hint-placeholder-count="0">
-                <polygon points="{{p.pts}}" style="fill: rgba(47,125,88,0.34); stroke: rgba(255,255,255,0.9); stroke-width: 4.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
-                <polygon points="{{p.pts}}" style="fill: none; stroke: #2f7d58; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
+                <polygon points="{{p.pts}}" style="fill: rgba(49,129,95,0.34); stroke: rgba(255,255,255,0.9); stroke-width: 4.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
+                <polygon points="{{p.pts}}" style="fill: none; stroke: #31815F; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
               </sc-for>
               <sc-if value="{{selHasHi}}" hint-placeholder-val="{{ false }}">
                 <polygon points="{{selHiPts}}" style="fill: rgba(38,72,255,0.16); stroke: #ffffff; stroke-width: 5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
                 <polygon points="{{selHiPts}}" style="fill: none; stroke: #2a3cff; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
               </sc-if>
               <sc-if value="{{hasDraft}}" hint-placeholder-val="{{ false }}">
-                <polygon points="{{draftPts}}" style="fill: rgba(47,125,88,0.34); stroke: rgba(255,255,255,0.9); stroke-width: 4.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
-                <polygon points="{{draftPts}}" style="fill: none; stroke: #2f7d58; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
+                <polygon points="{{draftPts}}" style="fill: rgba(49,129,95,0.34); stroke: rgba(255,255,255,0.9); stroke-width: 4.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
+                <polygon points="{{draftPts}}" style="fill: none; stroke: #31815F; stroke-width: 2.5px; stroke-linejoin: round; vector-effect: non-scaling-stroke"></polygon>
               </sc-if>
             </g>
           </g>
@@ -571,7 +727,7 @@ a{color:#31815f}a:hover{color:#226146}
 
         <sc-if value="{{showPin}}" hint-placeholder-val="{{ false }}">
           <svg class="pindrop" width="28" height="36" viewBox="0 0 28 36" aria-label="Search result" style="{{pinStyle}}">
-            <path d="M14 1C7 1 1.5 6.4 1.5 13.2c0 8.6 10.4 19.4 11.6 20.6a1.3 1.3 0 0 0 1.8 0C16.1 32.6 26.5 21.8 26.5 13.2 26.5 6.4 21 1 14 1z" style="fill: #0b2d3b; stroke: #ffffff; stroke-width: 1.5px"></path>
+            <path d="M14 1C7 1 1.5 6.4 1.5 13.2c0 8.6 10.4 19.4 11.6 20.6a1.3 1.3 0 0 0 1.8 0C16.1 32.6 26.5 21.8 26.5 13.2 26.5 6.4 21 1 14 1z" style="fill: #0B2D3B; stroke: #ffffff; stroke-width: 1.5px"></path>
             <circle cx="14" cy="13" r="4" style="fill: #ffffff"></circle>
           </svg>
         </sc-if>
@@ -585,7 +741,7 @@ a{color:#31815f}a:hover{color:#226146}
             <span class="pl-num">{{pl.num}}</span>
             <span class="pl-name">{{pl.name}}</span>
             <span class="pl-meta">
-              <span>{{pl.size}} m²</span>
+              <span>{{pl.size}} m³</span>
               <span class="pl-depth" style="{{pl.depthStyle}}">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15"></path><path d="M6 13l6 6 6-6"></path></svg>{{pl.depth}}
               </span>
@@ -594,13 +750,14 @@ a{color:#31815f}a:hover{color:#226146}
         </sc-for>
 
         <sc-if value="{{showZoomTip}}" hint-placeholder-val="{{ false }}">
-          <div class="zoomtip" style="{{zoomTipStyle}}">Zoom in closer to continue</div>
+          <div class="zoomtip ds-badge ds-badge--primary-solid" style="{{zoomTipStyle}}">Zoom in closer to continue</div>
         </sc-if>
 
         <!-- Address markers (one per address; grey by default, dark when selected) -->
         <svg width="1092" height="1028" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 5; overflow: visible">
           <sc-for list="{{pins}}" as="pn" hint-placeholder-count="0">
             <g transform="{{pn.t}}" opacity="{{pn.op}}" style="filter: drop-shadow(0 1px 1.5px rgba(0,0,0,0.35))">
+              <ellipse class="{{pn.ring}}" cx="12" cy="29" rx="11" ry="5"></ellipse>
               <path d="M12 1C6 1 1.5 5.5 1.5 11.3c0 7.2 8.6 16.3 9.7 17.4a1.1 1.1 0 0 0 1.6 0c1.1-1.1 9.7-10.2 9.7-17.4C22.5 5.5 18 1 12 1z" fill="{{pn.fill}}" stroke="#ffffff" stroke-width="1.4" style="transition: fill .2s ease"></path>
               <circle cx="12" cy="11" r="4.2" fill="#ffffff"></circle>
             </g>
@@ -615,35 +772,35 @@ a{color:#31815f}a:hover{color:#226146}
         </svg>
 
         <sc-if value="{{showTip}}" hint-placeholder-val="{{ false }}">
-          <div class="maptip" style="{{tipStyle}}">{{tipText}}</div>
+          <div class="maptip ds-badge ds-badge--primary-solid" style="{{tipStyle}}">{{tipText}}</div>
         </sc-if>
       </div>
 
       <!-- Map controls -->
-      <button class="mapbtn" aria-label="Map layers" aria-haspopup="dialog" aria-expanded="{{layersOpenStr}}" onClick="{{toggleLayers}}" style="{{layersBtnStyle}}">
+      <button class="ds-mapctl" aria-label="Map layers" aria-haspopup="dialog" aria-expanded="{{layersOpenStr}}" onClick="{{toggleLayers}}" style="{{layersBtnStyle}}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 12.5l9 5 9-5v3l-9 5-9-5z"></path></svg>
         <sc-if value="{{hasActiveLayers}}" hint-placeholder-val="{{ true }}">
-          <span style="position: absolute; top: -6px; right: -6px; width: 17px; height: 17px; border-radius: 50%; background: #2f7d5a; color: #ffffff; font-size: 10px; font-weight: 600; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px #ffffff">{{activeLayerCount}}</span>
+          <span class="ds-badge ds-badge--success-solid" style="position: absolute; top: -8px; right: -8px; pointer-events: none">{{activeLayerCount}}</span>
         </sc-if>
       </button>
 
       <sc-if value="{{layersOpen}}" hint-placeholder-val="{{ false }}">
-        <div class="{{layersPanelClass}}" role="dialog" aria-label="Lagvælger" onKeyDown="{{layersKey}}" style="position: absolute; right: 27px; top: 62px; width: 340px; z-index: 30; background: #ffffff; border-radius: 12px; box-shadow: 0 10px 32px rgba(11,45,59,0.18), 0 0 0 1px rgba(11,45,59,0.04); overflow: visible">
-          <div style="height: 58px; display: flex; align-items: center; gap: 10px; padding: 0 10px 0 16px; border-bottom: 1px solid #e3e8ec">
+        <div class="{{layersPanelClass}}" role="dialog" aria-label="Lagvælger" onKeyDown="{{layersKey}}" style="position: absolute; right: 27px; top: 62px; width: 320px; z-index: 30; background: var(--background); border-radius: 10px; box-shadow: var(--pop-ring), var(--shadow-md); overflow: visible">
+          <div style="height: 52px; display: flex; align-items: center; gap: 10px; padding: 0 8px 0 12px; border-bottom: 1px solid var(--border)">
             <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l9.5 5.3-9.5 5.3-9.5-5.3z" fill="#2fa59a"></path><path d="M2.5 12.6l9.5 5.3 9.5-5.3v3.2l-9.5 5.3-9.5-5.3z" fill="#7cc7bf"></path></svg>
-            <span style="flex: 1; font-size: 18px; font-weight: 600; color: #12232b">Lagvælger</span>
+            <span style="flex: 1; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--foreground)">Lagvælger</span>
             <div style="position: relative">
-              <button class="iconbtn" aria-label="Layer settings" aria-expanded="{{headMenuStr}}" onClick="{{toggleHeadMenu}}" style="width: 34px; height: 34px; border: 0; border-radius: 6px; background: transparent; color: #12232b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+              <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="Layer settings" aria-expanded="{{headMenuStr}}" onClick="{{toggleHeadMenu}}">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.4 7.4 0 0 0-1.7-1L14.4 2.4a.5.5 0 0 0-.5-.4h-4a.5.5 0 0 0-.5.4L9 5.1a7.4 7.4 0 0 0-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.5a.5.5 0 0 0 .1.6L4.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.6l2 3.5c.1.2.4.3.6.2l2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.7c0 .2.3.4.5.4h4c.2 0 .5-.2.5-.4l.4-2.7a7.4 7.4 0 0 0 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5a.5.5 0 0 0-.1-.6zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"></path></svg>
               </button>
               <sc-if value="{{headMenu}}" hint-placeholder-val="{{ false }}">
-                <div role="menu" style="position: absolute; right: 0; top: 38px; z-index: 40; width: 170px; background: #ffffff; border-radius: 8px; box-shadow: 0 8px 24px rgba(11,45,59,0.18), 0 0 0 1px rgba(11,45,59,0.06); padding: 4px">
-                  <button class="sugg" role="menuitem" onClick="{{showAllLayers}}" style="display: block; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #12232b; height: 36px; padding: 0 12px; cursor: pointer">Show all layers</button>
-                  <button class="sugg" role="menuitem" onClick="{{hideAllLayers}}" style="display: block; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #12232b; height: 36px; padding: 0 12px; cursor: pointer">Hide all layers</button>
+                <div role="menu" class="ds-menu" style="position: absolute; right: 0; top: 34px; z-index: 40; width: 170px">
+                  <button class="ds-menu-item" role="menuitem" onClick="{{showAllLayers}}">Show all layers</button>
+                  <button class="ds-menu-item" role="menuitem" onClick="{{hideAllLayers}}">Hide all layers</button>
                 </div>
               </sc-if>
             </div>
-            <button class="iconbtn" aria-label="{{collapseLabel}}" aria-expanded="{{listExpandedStr}}" onClick="{{toggleCollapse}}" style="width: 34px; height: 34px; border: 0; border-radius: 6px; background: transparent; color: #12232b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+            <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="{{collapseLabel}}" aria-expanded="{{listExpandedStr}}" onClick="{{toggleCollapse}}">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="{{collapseChevStyle}}"><path d="M6 15l6-6 6 6"></path></svg>
             </button>
           </div>
@@ -659,15 +816,15 @@ a{color:#31815f}a:hover{color:#226146}
                   <span style="{{l.nameStyle}}">{{l.name}}</span>
                 </button>
                 <div style="position: relative; flex: none">
-                  <button class="iconbtn" aria-label="{{l.menuLabel}}" onClick="{{l.toggleMenu}}" style="width: 30px; height: 30px; border: 0; border-radius: 6px; background: transparent; color: #5f6e74; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                  <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="{{l.menuLabel}}" onClick="{{l.toggleMenu}}" style="color: var(--muted-foreground)">
                     <svg width="4" height="14" viewBox="0 0 4 14" fill="currentColor"><circle cx="2" cy="2" r="1.5"></circle><circle cx="2" cy="7" r="1.5"></circle><circle cx="2" cy="12" r="1.5"></circle></svg>
                   </button>
                   <sc-if value="{{l.menuOpen}}" hint-placeholder-val="{{ false }}">
-                    <div class="drop" role="menu" style="position: absolute; right: 0; top: 34px; z-index: 40; width: 160px; background: #ffffff; border-radius: 8px; box-shadow: 0 8px 24px rgba(11,45,59,0.18), 0 0 0 1px rgba(11,45,59,0.06); padding: 4px">
-                      <button class="sugg" role="menuitem" onClick="{{l.toggleFromMenu}}" style="display: block; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #12232b; height: 36px; padding: 0 12px; cursor: pointer">{{l.toggleLabel}}</button>
-                      <button class="sugg" role="menuitem" onClick="{{l.moveUp}}" disabled="{{l.isFirst}}" style="{{l.upStyle}}">Move up</button>
-                      <button class="sugg" role="menuitem" onClick="{{l.moveDown}}" disabled="{{l.isLast}}" style="{{l.downStyle}}">Move down</button>
-                      <button class="sugg" role="menuitem" onClick="{{l.remove}}" style="display: block; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #b42318; height: 36px; padding: 0 12px; cursor: pointer">Remove layer</button>
+                    <div class="ds-menu" role="menu" style="position: absolute; right: 0; top: 32px; z-index: 40; width: 160px">
+                      <button class="ds-menu-item" role="menuitem" onClick="{{l.toggleFromMenu}}">{{l.toggleLabel}}</button>
+                      <button class="ds-menu-item" role="menuitem" onClick="{{l.moveUp}}" disabled="{{l.isFirst}}">Move up</button>
+                      <button class="ds-menu-item" role="menuitem" onClick="{{l.moveDown}}" disabled="{{l.isLast}}">Move down</button>
+                      <button class="ds-menu-item ds-menu-item--destructive" role="menuitem" onClick="{{l.remove}}">Remove layer</button>
                     </div>
                   </sc-if>
                 </div>
@@ -675,16 +832,16 @@ a{color:#31815f}a:hover{color:#226146}
             </sc-for>
           </div>
           <div style="position: relative; padding: 4px 12px 12px">
-            <button class="nextbtn-on" aria-haspopup="menu" aria-expanded="{{addMenuStr}}" onClick="{{toggleAddMenu}}" style="width: 100%; height: 44px; border: 0; border-radius: 6px; background: #0b2d3b; color: #ffffff; font-size: 16px; font-weight: 500; cursor: pointer">Tilføj lag</button>
+            <button class="ds-btn ds-btn--primary ds-btn--block" aria-haspopup="menu" aria-expanded="{{addMenuStr}}" onClick="{{toggleAddMenu}}">Tilføj lag</button>
             <sc-if value="{{addMenu}}" hint-placeholder-val="{{ false }}">
-              <div role="menu" aria-label="Available layers" style="position: absolute; left: 12px; right: 12px; top: 54px; z-index: 40; background: #ffffff; border-radius: 8px; box-shadow: 0 8px 24px rgba(11,45,59,0.18), 0 0 0 1px rgba(11,45,59,0.06); padding: 4px">
+              <div role="menu" aria-label="Available layers" class="ds-menu" style="position: absolute; left: 12px; right: 12px; top: 46px; z-index: 40">
                 <sc-for list="{{addable}}" as="al" hint-placeholder-count="3">
-                  <button class="sugg" role="menuitem" onClick="{{al.add}}" style="display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; color: #12232b; height: 38px; padding: 0 10px; cursor: pointer">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#31815f" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>{{al.name}}
+                  <button class="ds-menu-item" role="menuitem" onClick="{{al.add}}">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#31815F" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>{{al.name}}
                   </button>
                 </sc-for>
                 <sc-if value="{{noAddable}}" hint-placeholder-val="{{ false }}">
-                  <div style="padding: 10px 12px; font-size: 13px; color: #6b7a80">All layers are already added</div>
+                  <div class="ds-menu-empty">All layers are already added</div>
                 </sc-if>
               </div>
             </sc-if>
@@ -693,16 +850,15 @@ a{color:#31815f}a:hover{color:#226146}
         </div>
       </sc-if>
 
-      <button class="mapbtn" aria-label="Go to my location" onClick="{{locateMe}}" style="position: absolute; left: 1027px; top: 871px; width: 38px; height: 38px; border: 0; border-radius: 6px; background: #ffffff; box-shadow: 0 1px 4px rgba(11,45,59,0.16); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; color: #0b2d3b">
+      <button class="ds-mapctl" aria-label="Go to my location" onClick="{{locateMe}}" style="position: absolute; left: 1027px; top: 871px">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="6.5"></circle><circle cx="12" cy="12" r="2.2" fill="currentColor"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path></svg>
       </button>
 
-      <div style="position: absolute; left: 1027px; top: 923px; width: 38px; height: 75px; border-radius: 6px; background: #ffffff; box-shadow: 0 1px 4px rgba(11,45,59,0.16); display: flex; flex-direction: column; overflow: hidden">
-        <button class="mapbtn" aria-label="Zoom in" onClick="{{zoomIn}}" disabled="{{zinDisabled}}" style="flex: 1; border: 0; background: #ffffff; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; color: #0b2d3b">
+      <div class="ds-mapctl-group" style="position: absolute; left: 1027px; top: 923px">
+        <button class="ds-mapctl" aria-label="Zoom in" onClick="{{zoomIn}}" disabled="{{zinDisabled}}">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
         </button>
-        <span style="height: 1px; background: #e9edf2; margin: 0 6px"></span>
-        <button class="mapbtn" aria-label="Zoom out" onClick="{{zoomOut}}" disabled="{{zoutDisabled}}" style="flex: 1; border: 0; background: #ffffff; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; color: #0b2d3b">
+        <button class="ds-mapctl" aria-label="Zoom out" onClick="{{zoomOut}}" disabled="{{zoutDisabled}}">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
         </button>
       </div>
@@ -712,32 +868,32 @@ a{color:#31815f}a:hover{color:#226146}
       </button>
 
       <div style="position: absolute; left: 103px; top: 975px; width: 161px; height: 24px; display: flex; flex-direction: column; justify-content: flex-end; background: rgba(255,255,255,0.0)">
-        <div style="position: absolute; left: 0; right: 0; top: 0; text-align: center; font-size: 11px; color: #12232b; line-height: 14px">{{scaleLabel}}</div>
-        <div style="height: 6px; border: 1px solid #12232b; border-top: 0; box-sizing: border-box"></div>
+        <div style="position: absolute; left: 0; right: 0; top: 0; text-align: center; font-size: 11px; color: #0C1D24; line-height: 14px">{{scaleLabel}}</div>
+        <div style="height: 6px; border: 1px solid #0C1D24; border-top: 0; box-sizing: border-box"></div>
       </div>
 
-      <div style="position: absolute; right: 6px; bottom: 8px; font-size: 9px; color: #2b3a40; background: rgba(255,255,255,0.75); padding: 1px 4px; border-radius: 2px">© DMP &nbsp;© SDFI</div>
+      <div style="position: absolute; right: 6px; bottom: 8px; font-size: 9px; color: #0C1D24; background: rgba(255,255,255,0.75); padding: 1px 4px; border-radius: 2px">© DMP &nbsp;© SDFI</div>
 
       <!-- Map search (analysis mode) -->
       <sc-if value="{{showMapSearch}}" hint-placeholder-val="{{ false }}">
-        <div class="mapsearch" style="position: absolute; left: 24px; top: 24px; width: 340px; height: 36px; box-sizing: border-box; background: #ffffff; border-radius: 4px; box-shadow: 0 1px 4px rgba(11,45,59,0.18); display: flex; align-items: center; gap: 10px; padding: 0 12px 0 13px; z-index: 6">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5f6e74" stroke-width="2" stroke-linecap="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <div class="mapsearch ds-group ds-group--float" style="position: absolute; left: 24px; top: 24px; width: 340px; z-index: 6">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#55666D" stroke-width="2" stroke-linecap="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
           <label for="jf-mapsearch" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Where will you dig up the soil?</label>
-          <input id="jf-mapsearch" type="text" autocomplete="off" placeholder="Where will you dig up the soil?" value="{{mapQuery}}" onChange="{{onMapQuery}}" style="flex: 1; min-width: 0; border: 0; outline: none; background: transparent; font-size: 15px; color: #12232b; height: 34px; padding: 0">
+          <input id="jf-mapsearch" type="text" autocomplete="off" placeholder="Where will you dig up the soil?" value="{{mapQuery}}" onChange="{{onMapQuery}}">
         </div>
       </sc-if>
 
       <!-- Zoom gate -->
-      <div class="{{mapCardCls}}" style="position: absolute; left: 374px; top: 908px; width: 340px; height: 58px; box-sizing: border-box; background: #ffffff; border-radius: 10px; box-shadow: 0 2px 10px rgba(11,45,59,0.12); display: grid; z-index: 3; overflow: hidden">
-        <div class="{{gateCls}}" aria-hidden="{{gateHidden}}" role="status" aria-live="polite" style="padding: 0 18px; display: flex; align-items: center; gap: 12px">
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5f6e74" stroke-width="1.9" stroke-linecap="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"></path></svg>
-          <span style="flex: 1; font-size: 15px; font-weight: 600; color: #0b2d3b">Find your digging location</span>
-          <span style="font-size: 14px; color: #7b8a90">Zoom in</span>
+      <div class="{{mapCardCls}}" style="position: absolute; left: 374px; top: 908px; width: 340px; height: 58px; display: grid; z-index: 3; overflow: hidden">
+        <div class="{{gateCls}}" aria-hidden="{{gateHidden}}" role="status" aria-live="polite" style="padding: 0 16px; display: flex; align-items: center; gap: 12px">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#55666D" stroke-width="1.9" stroke-linecap="round" style="flex: none"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"></path></svg>
+          <span style="flex: 1; font-size: 15px; line-height: 22px; font-weight: 500; color: var(--primary)">Find your digging location</span>
+          <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground)">Zoom in</span>
         </div>
-        <button class="{{beginCls}}" tabIndex="{{beginTab}}" aria-hidden="{{beginHidden}}" onClick="{{beginAnalyse}}" style="width: 100%; height: 100%; box-sizing: border-box; border: 0; background: transparent; padding: 0 9px 0 18px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31815f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.3l2.8 2.8L16.3 9.6"></path></svg>
-          <span style="flex: 1; font-size: 16px; font-weight: 600; line-height: 22px; color: #0b2d3b">Continue to screening</span>
-          <span class="mgo" aria-hidden="true" style="width: 40px; height: 40px; border-radius: 6px; background: #0b2d3b; color: #ffffff; display: flex; align-items: center; justify-content: center; flex: none">
+        <button class="{{beginCls}}" tabIndex="{{beginTab}}" aria-hidden="{{beginHidden}}" onClick="{{beginAnalyse}}" style="width: 100%; height: 100%; box-sizing: border-box; border: 0; background: transparent; padding: 0 12px 0 16px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; font-family: inherit">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31815F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.3l2.8 2.8L16.3 9.6"></path></svg>
+          <span style="flex: 1; font-size: 15px; font-weight: 500; line-height: 22px; color: var(--primary)">Continue to screening</span>
+          <span class="mgo ds-callout-go" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </span>
         </button>
@@ -745,14 +901,14 @@ a{color:#31815f}a:hover{color:#226146}
 
       <!-- Draw tools -->
       <sc-if value="{{isDraw}}" hint-placeholder-val="{{ false }}">
-        <div class="fadeinlate" role="toolbar" aria-label="Map tools" style="position: absolute; left: 24px; top: 440px; width: 52px; box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 1px 6px rgba(11,45,59,0.16); padding: 6px; display: flex; flex-direction: column; gap: 6px; z-index: 6">
-          <button class="tipbtn" data-tip="Select in map" aria-label="Select in map" aria-pressed="{{toolSelectStr}}" onClick="{{toolSelect}}" style="{{toolSelectStyle}}">
+        <div class="fadeinlate ds-toolbar" role="toolbar" aria-label="Map tools" style="position: absolute; left: 24px; top: 440px; z-index: 6">
+          <button class="tipbtn ds-tool" data-tip="Select in map" aria-label="Select in map" aria-pressed="{{toolSelectStr}}" onClick="{{toolSelect}}" style="{{toolSelectStyle}}">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V4.8a1.6 1.6 0 0 1 3.2 0V11"></path><path d="M12.2 10.5V9.2a1.6 1.6 0 0 1 3.2 0v2"></path><path d="M15.4 11V10a1.6 1.6 0 0 1 3.2 0v4.6A6.4 6.4 0 0 1 12.2 21h-.9a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.6 1.6 0 0 1 2.4-2.1L9 15"></path></svg>
           </button>
-          <button class="tipbtn" data-tip="Draw digging area" aria-label="Draw digging area" aria-pressed="{{toolPolyStr}}" onClick="{{toolPoly}}" style="{{toolPolyStyle}}">
+          <button class="tipbtn ds-tool" data-tip="Draw digging area" aria-label="Draw digging area" aria-pressed="{{toolPolyStr}}" onClick="{{toolPoly}}" style="{{toolPolyStyle}}">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 5l13 3-4 11-8-4z"></path><rect x="4" y="3" width="4" height="4" fill="{{toolPolyFill}}"></rect><rect x="17" y="6" width="4" height="4" fill="{{toolPolyFill}}"></rect><rect x="13" y="17" width="4" height="4" fill="{{toolPolyFill}}"></rect><rect x="5" y="13" width="4" height="4" fill="{{toolPolyFill}}"></rect></svg>
           </button>
-          <label class="toolupload tipbtn" data-tip="Upload area from file" style="{{toolUploadStyle}}">
+          <label class="toolupload tipbtn ds-tool" data-tip="Upload area from file" style="{{toolUploadStyle}}">
             <input type="file" accept=".geojson,.json,.kml,.kmz,.gml,.shp,.zip,.dxf" aria-label="Upload area from file" onChange="{{onUploadFile}}" style="position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; pointer-events: none">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M7.5 8.5L12 4l4.5 4.5"></path><path d="M4 14v5h16v-5"></path></svg>
           </label>
@@ -761,14 +917,14 @@ a{color:#31815f}a:hover{color:#226146}
         <!-- Select in map: feature info popup -->
         <sc-if value="{{selOpen}}" hint-placeholder-val="{{ false }}">
           <div class="selpop" role="dialog" aria-label="{{selTitle}}" onKeyDown="{{selKey}}" style="{{selPopStyle}}">
-            <div style="height: 48px; display: flex; align-items: center; gap: 6px; padding: 0 8px 0 16px; border-bottom: 1px solid #e9edf2">
+            <div style="height: 44px; display: flex; align-items: center; gap: 6px; padding: 0 8px 0 12px; border-bottom: 1px solid var(--border)">
               <sc-if value="{{selInDetail}}" hint-placeholder-val="{{ false }}">
-                <button class="iconbtn" aria-label="Back to list" onClick="{{selBack}}" style="width: 28px; height: 28px; margin-left: -8px; border: 0; border-radius: 6px; background: transparent; color: #0b2d3b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="Back to list" onClick="{{selBack}}" style="margin-left: -4px">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg>
                 </button>
               </sc-if>
-              <span style="flex: 1; min-width: 0; font-size: 13px; font-weight: 600; color: #2b3a40; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{selTitle}}</span>
-              <button class="iconbtn" aria-label="Close" autoFocus="{{ true }}" onClick="{{selClose}}" style="width: 30px; height: 30px; border: 0; border-radius: 6px; background: transparent; color: #0b2d3b; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+              <span style="flex: 1; min-width: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{selTitle}}</span>
+              <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="Close" autoFocus="{{ true }}" onClick="{{selClose}}">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
               </button>
             </div>
@@ -777,27 +933,27 @@ a{color:#31815f}a:hover{color:#226146}
                 <sc-for list="{{selItems}}" as="si" hint-placeholder-count="3">
                   <button class="selitem" onClick="{{si.open}}" onMouseEnter="{{si.hoverOn}}" onMouseLeave="{{si.hoverOff}}">
                     <span style="flex: 1; min-width: 0">
-                      <span style="display: block; font-size: 16px; line-height: 21px; font-weight: 600; color: #12232b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{si.title}}</span>
-                      <span style="display: block; margin-top: 3px; font-size: 12px; line-height: 16px; font-weight: 400; color: #5f6e74">{{si.sub}}</span>
+                      <span class="ds-item-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{si.title}}</span>
+                      <span class="ds-item-desc">{{si.sub}}</span>
                     </span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9aa5aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; align-self: flex-start; margin-top: 3px"><path d="M9 6l6 6-6 6"></path></svg>
                   </button>
                 </sc-for>
                 <sc-if value="{{selEmpty}}" hint-placeholder-val="{{ false }}">
-                  <div style="padding: 18px 16px; font-size: 14px; line-height: 20px; color: #5f6e74">No map information at this point. Try clicking on a parcel or one of your digging sites.</div>
+                  <div style="padding: 16px 12px; font-size: 14px; line-height: 20px; color: var(--muted-foreground)">No map information at this point. Try clicking on a parcel or one of your digging sites.</div>
                 </sc-if>
               </div>
             </sc-if>
             <sc-if value="{{selInDetail}}" hint-placeholder-val="{{ false }}">
-              <div style="padding: 14px 16px 6px">
-                <div style="font-size: 18px; line-height: 23px; font-weight: 600; color: #12232b">{{selDetailTitle}}</div>
-                <div style="margin-top: 3px; font-size: 12px; line-height: 16px; font-weight: 400; color: #5f6e74">{{selDetailSub}}</div>
+              <div style="padding: 12px 12px 4px">
+                <div style="font-size: 15px; line-height: 22px; font-weight: 500; color: var(--foreground)">{{selDetailTitle}}</div>
+                <div style="font-size: 14px; line-height: 20px; font-weight: 400; color: var(--muted-foreground)">{{selDetailSub}}</div>
               </div>
-              <dl style="margin: 0; padding: 4px 16px 14px">
+              <dl style="margin: 0; padding: 4px 12px 12px">
                 <sc-for list="{{selRows}}" as="sr" hint-placeholder-count="4">
-                  <div style="display: flex; justify-content: space-between; gap: 14px; padding: 9px 0; border-top: 1px solid #eef1f4; font-size: 13px; line-height: 18px">
-                    <dt style="color: #6b7a80">{{sr.k}}</dt>
-                    <dd style="margin: 0; color: #12232b; font-weight: 500; text-align: right">{{sr.v}}</dd>
+                  <div style="display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px solid var(--border); font-size: 14px; line-height: 20px">
+                    <dt style="color: var(--muted-foreground)">{{sr.k}}</dt>
+                    <dd style="margin: 0; color: var(--foreground); text-align: right">{{sr.v}}</dd>
                   </div>
                 </sc-for>
               </dl>
@@ -808,49 +964,49 @@ a{color:#31815f}a:hover{color:#226146}
         <!-- Status bar: tells what you are doing right now on the map -->
         <sc-if value="{{showStatus}}" hint-placeholder-val="{{ false }}">
           <div class="statusbar" role="status" aria-live="polite">
-            <span style="width: 32px; height: 32px; border-radius: 6px; background: #0b2d3b; color: #ffffff; display: flex; align-items: center; justify-content: center; flex: none">
-              <sc-if value="{{statusIsDraw}}" hint-placeholder-val="{{ true }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 5l13 3-4 11-8-4z"></path><rect x="4" y="3" width="4" height="4" fill="#0b2d3b"></rect><rect x="17" y="6" width="4" height="4" fill="#0b2d3b"></rect><rect x="13" y="17" width="4" height="4" fill="#0b2d3b"></rect><rect x="5" y="13" width="4" height="4" fill="#0b2d3b"></rect></svg></sc-if>
+            <span class="ds-featured ds-featured--dark ds-featured--sm">
+              <sc-if value="{{statusIsDraw}}" hint-placeholder-val="{{ true }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 5l13 3-4 11-8-4z"></path><rect x="4" y="3" width="4" height="4" fill="#0B2D3B"></rect><rect x="17" y="6" width="4" height="4" fill="#0B2D3B"></rect><rect x="13" y="17" width="4" height="4" fill="#0B2D3B"></rect><rect x="5" y="13" width="4" height="4" fill="#0B2D3B"></rect></svg></sc-if>
               <sc-if value="{{statusIsSelect}}" hint-placeholder-val="{{ false }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V4.8a1.6 1.6 0 0 1 3.2 0V11"></path><path d="M12.2 10.5V9.2a1.6 1.6 0 0 1 3.2 0v2"></path><path d="M15.4 11V10a1.6 1.6 0 0 1 3.2 0v4.6A6.4 6.4 0 0 1 12.2 21h-.9a6 6 0 0 1-4.7-2.3l-2.9-3.7a1.6 1.6 0 0 1 2.4-2.1L9 15"></path></svg></sc-if>
               <sc-if value="{{statusIsAdjust}}" hint-placeholder-val="{{ false }}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"></path></svg></sc-if>
             </span>
             <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
-              <span style="display: flex; align-items: center; gap: 8px; min-width: 0; white-space: nowrap"><span style="font-size: 14px; line-height: 18px; font-weight: 600; color: #12232b; overflow: hidden; text-overflow: ellipsis">{{statusTitle}}</span><sc-for list="{{statusMeta}}" as="sm" hint-placeholder-count="0"><span class="smeta">{{sm}}</span></sc-for></span>
-              <span style="font-size: 12px; line-height: 16px; color: #6b7a80; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{statusDetail}}</span>
+              <span style="display: flex; align-items: center; gap: 8px; min-width: 0; white-space: nowrap"><span style="font-size: 14px; line-height: 20px; font-weight: 500; color: var(--foreground); overflow: hidden; text-overflow: ellipsis">{{statusTitle}}</span><sc-for list="{{statusMeta}}" as="sm" hint-placeholder-count="0"><span class="ds-badge ds-badge--neutral">{{sm}}</span></sc-for></span>
+              <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{statusDetail}}</span>
             </span>
             <sc-if value="{{statusIsDraw}}" hint-placeholder-val="{{ true }}">
-              <button class="iconbtn" aria-label="Undo last point" title="Undo last point" disabled="{{noPts}}" onClick="{{undoPoint}}" style="{{undoStyle}}">
+              <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="Undo last point" title="Undo last point" disabled="{{noPts}}" onClick="{{undoPoint}}">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v5h5"></path><path d="M4.6 10A8 8 0 1 1 6 16.5"></path></svg>
               </button>
-              <button class="iconbtn" aria-label="Discard drawing" title="Discard drawing" disabled="{{noPts}}" onClick="{{clearDraft}}" style="{{undoStyle}}">
+              <button class="ds-btn ds-btn--ghost ds-btn--icon-sm" aria-label="Discard drawing" title="Discard drawing" disabled="{{noPts}}" onClick="{{clearDraft}}">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"></path></svg>
               </button>
             </sc-if>
           </div>
         </sc-if>
         </sc-if>
-      </sc-if>
+      
 
       <sc-if value="{{showToast}}" hint-placeholder-val="{{ false }}">
-        <div class="{{toastClass}}" role="status" style="position: absolute; left: 50%; top: 20px; transform: translateX(-50%); background: #0b2d3b; color: #ffffff; font-size: 14px; padding: 10px 16px; border-radius: 8px; box-shadow: 0 4px 14px rgba(11,45,59,0.25)">{{toast}}</div>
+        <div class="{{toastClass}}" role="status" style="position: absolute; left: 50%; top: 20px; transform: translateX(-50%); z-index: 60; width: auto; max-width: 420px">{{toast}}</div>
       </sc-if>
     </main>
   </div>
 
   <!-- Info modal -->
   <sc-if value="{{infoOpen}}" hint-placeholder-val="{{ false }}">
-    <div class="jfoverlay" onClick="{{closeInfo}}" style="position: absolute; inset: 0; z-index: 50; background: rgba(8,28,37,0.55); display: flex; align-items: center; justify-content: center">
-      <div class="jfmodal" role="dialog" aria-modal="true" aria-labelledby="jf-info-title" onClick="{{stop}}" onKeyDown="{{infoKey}}" style="position: relative; width: 561px; box-sizing: border-box; background: #ffffff; border-radius: 10px; box-shadow: 0 12px 40px rgba(8,28,37,0.28); padding: 22px 24px 34px 20px">
-        <button class="iconbtn" aria-label="Close" autoFocus="{{ true }}" onClick="{{closeInfo}}" style="position: absolute; top: 20px; right: 24px; width: 30px; height: 30px; border: 0; border-radius: 6px; background: transparent; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+    <div class="jfoverlay ds-overlay" onClick="{{closeInfo}}">
+      <div class="jfmodal ds-dialog ds-dialog--lg" role="dialog" aria-modal="true" aria-labelledby="jf-info-title" onClick="{{stop}}" onKeyDown="{{infoKey}}">
+        <button class="ds-btn ds-btn--ghost ds-btn--icon-sm ds-dialog-close" aria-label="Close" autoFocus="{{ true }}" onClick="{{closeInfo}}">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </button>
-        <div id="jf-info-title" style="font-size: 16px; line-height: 22px; color: #12232b">How do i analyse my soil?</div>
-        <div style="padding: 0 0 0 4px">
-          <h2 style="margin: 26px 0 0; font-size: 22px; font-weight: 500; line-height: 28px; color: #12232b">About the calculation</h2>
-          <p style="margin: 8px 0 0; font-size: 14px; line-height: 20px; color: #4a5a60">The system uses Halpern or Ges4Seas model to calculate impact in marine areas around the oceans of Denmark.</p>
-          <h3 style="margin: 22px 0 0; font-size: 16px; font-weight: 500; line-height: 22px; color: #12232b">Map visualisation</h3>
-          <p style="margin: 6px 0 0; font-size: 14px; line-height: 20px; color: #4a5a60">Each scenario is a map of Danish waters in 500 × 500 m cells, with a pressure value per cell. The tool subtracts scenario 2's value from scenario 1's, cell by cell. Zero is neutral; a positive cell takes scenario 1's colour, a negative cell scenario 2's. Colour on the map means: here this scenario has more pressure.</p>
-          <h3 style="margin: 22px 0 0; font-size: 16px; font-weight: 500; line-height: 22px; color: #12232b">Lists data</h3>
-          <p style="margin: 6px 0 0; font-size: 14px; line-height: 20px; color: #4a5a60">The numbers in the lists are the same subtraction, summed over all cells per component or zone type. Open a row to see it written out. Percentages are relative to scenario 2, and the arrow says whether pressure rises (red) or falls (green) in scenario 1.</p>
+        <div id="jf-info-title" class="ds-dialog-title" style="padding-right: 32px">How do i analyse my soil?</div>
+        <div>
+          <h2 style="margin: 0; font-size: 20px; font-weight: 500; line-height: 28px; color: var(--foreground)">About the calculation</h2>
+          <p style="margin: 8px 0 0; font-size: 14px; line-height: 20px; color: var(--muted-foreground)">The system uses Halpern or Ges4Seas model to calculate impact in marine areas around the oceans of Denmark.</p>
+          <h3 style="margin: 20px 0 0; font-size: 15px; font-weight: 500; line-height: 22px; color: var(--foreground)">Map visualisation</h3>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 20px; color: var(--muted-foreground)">Each scenario is a map of Danish waters in 500 × 500 m cells, with a pressure value per cell. The tool subtracts scenario 2's value from scenario 1's, cell by cell. Zero is neutral; a positive cell takes scenario 1's colour, a negative cell scenario 2's. Colour on the map means: here this scenario has more pressure.</p>
+          <h3 style="margin: 20px 0 0; font-size: 15px; font-weight: 500; line-height: 22px; color: var(--foreground)">Lists data</h3>
+          <p style="margin: 6px 0 0; font-size: 14px; line-height: 20px; color: var(--muted-foreground)">The numbers in the lists are the same subtraction, summed over all cells per component or zone type. Open a row to see it written out. Percentages are relative to scenario 2, and the arrow says whether pressure rises (red) or falls (green) in scenario 1.</p>
         </div>
       </div>
     </div>
@@ -858,13 +1014,13 @@ a{color:#31815f}a:hover{color:#226146}
 
   <!-- Copy notification -->
   <sc-if value="{{showNotice}}" hint-placeholder-val="{{ false }}">
-    <div class="ntoast" role="status" aria-live="polite" style="{{noticeStyle}}">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="{{noticeColor}}" stroke-width="2" stroke-linecap="round" style="flex: none; margin-top: 1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5h.01"></path></svg>
+    <div class="ntoast ds-toast" role="status" aria-live="polite" style="{{noticeStyle}}">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{noticeColor}}" stroke-width="2" stroke-linecap="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5h.01"></path></svg>
       <div style="flex: 1; min-width: 0">
-        <div style="font-size: 15px; font-weight: 600; color: #2b3a40; line-height: 20px">{{noticeTitle}}</div>
-        <div style="margin-top: 4px; font-size: 14px; color: #5f6e74; line-height: 20px">{{noticeText}}</div>
+        <div class="ds-toast-title">{{noticeTitle}}</div>
+        <div class="ds-toast-desc">{{noticeText}}</div>
       </div>
-      <button class="iconbtn" aria-label="Dismiss" onClick="{{closeNotice}}" style="width: 28px; height: 28px; margin: -4px -6px 0 0; border: 0; border-radius: 6px; background: transparent; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; flex: none">
+      <button class="ds-btn ds-btn--ghost ds-btn--icon-xs" aria-label="Dismiss" onClick="{{closeNotice}}" style="margin: -2px -6px 0 0; color: var(--muted-foreground)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
       </button>
     </div>
@@ -872,16 +1028,15 @@ a{color:#31815f}a:hover{color:#226146}
 
   <!-- Leave confirmation modal -->
   <sc-if value="{{confirmOpen}}" hint-placeholder-val="{{ false }}">
-    <div class="{{overlayClass}}" onClick="{{cancelLeave}}" style="position: absolute; inset: 0; z-index: 50; background: rgba(8,28,37,0.55); display: flex; align-items: center; justify-content: center">
-      <div class="jfmodal" role="dialog" aria-modal="true" aria-labelledby="jf-leave-title" aria-describedby="jf-leave-desc" onClick="{{stop}}" onKeyDown="{{modalKey}}" style="position: relative; width: 532px; box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 12px 40px rgba(8,28,37,0.28); padding: 30px 26px 16px 27px">
-        <button class="iconbtn" aria-label="Close" onClick="{{cancelLeave}}" style="position: absolute; top: 16px; right: 16px; width: 32px; height: 32px; border: 0; border-radius: 6px; background: transparent; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
-        </button>
-        <h2 id="jf-leave-title" style="margin: 0; font-size: 19px; font-weight: 500; line-height: 26px; color: #12232b">Do you want to go back?</h2>
-        <p id="jf-leave-desc" style="margin: 6px 0 0; font-size: 16px; line-height: 22px; color: #5f6e74">If you go back, all your current progress will be lost.</p>
-        <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-          <button class="jfcancel" autoFocus="{{ true }}" onClick="{{cancelLeave}}" style="height: 48px; border: 0; border-radius: 6px; background: #e6eaf0; color: #2b3a40; font-size: 17px; cursor: pointer">Cancel</button>
-          <button class="nextbtn-on" onClick="{{confirmLeave}}" style="height: 48px; border: 0; border-radius: 6px; background: #0b2d3b; color: #ffffff; font-size: 17px; cursor: pointer">Yes, go back</button>
+    <div class="{{overlayClass}}" onClick="{{cancelLeave}}">
+      <div class="jfmodal ds-dialog" role="dialog" aria-modal="true" aria-labelledby="jf-leave-title" aria-describedby="jf-leave-desc" onClick="{{stop}}" onKeyDown="{{modalKey}}">
+        <div class="ds-dialog-header">
+          <h2 class="ds-dialog-title" id="jf-leave-title">Do you want to go back?</h2>
+          <p class="ds-dialog-desc" id="jf-leave-desc">If you go back, all your current progress will be lost.</p>
+        </div>
+        <div class="ds-dialog-footer">
+          <button class="ds-btn ds-btn--outline" autoFocus="{{ true }}" onClick="{{cancelLeave}}">Cancel</button>
+          <button class="ds-btn ds-btn--primary" onClick="{{confirmLeave}}">Yes, go back</button>
         </div>
       </div>
     </div>
@@ -889,16 +1044,15 @@ a{color:#31815f}a:hover{color:#226146}
 
   <!-- Remove digging site confirmation (only for sites that have a drawing or details) -->
   <sc-if value="{{removeOpen}}" hint-placeholder-val="{{ false }}">
-    <div class="{{removeOverlayClass}}" onClick="{{cancelRemove}}" style="position: absolute; inset: 0; z-index: 50; background: rgba(8,28,37,0.55); display: flex; align-items: center; justify-content: center">
-      <div class="jfmodal" role="dialog" aria-modal="true" aria-labelledby="jf-rm-title" aria-describedby="jf-rm-desc" onClick="{{stop}}" onKeyDown="{{removeKey}}" style="position: relative; width: 532px; box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 12px 40px rgba(8,28,37,0.28); padding: 30px 26px 16px 27px">
-        <button class="iconbtn" aria-label="Close" onClick="{{cancelRemove}}" style="position: absolute; top: 16px; right: 16px; width: 32px; height: 32px; border: 0; border-radius: 6px; background: transparent; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
-        </button>
-        <h2 id="jf-rm-title" style="margin: 0 40px 0 0; font-size: 19px; font-weight: 500; line-height: 26px; color: #12232b">{{removeTitle}}</h2>
-        <p id="jf-rm-desc" style="margin: 6px 0 0; font-size: 16px; line-height: 22px; color: #5f6e74">{{removeDesc}}</p>
-        <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-          <button class="jfcancel" autoFocus="{{ true }}" onClick="{{cancelRemove}}" style="height: 48px; border: 0; border-radius: 6px; background: #e6eaf0; color: #2b3a40; font-size: 17px; cursor: pointer">Cancel</button>
-          <button class="nextbtn-on" onClick="{{confirmRemove}}" style="height: 48px; border: 0; border-radius: 6px; background: #0b2d3b; color: #ffffff; font-size: 17px; cursor: pointer">{{removeOk}}</button>
+    <div class="{{removeOverlayClass}}" onClick="{{cancelRemove}}">
+      <div class="jfmodal ds-dialog" role="dialog" aria-modal="true" aria-labelledby="jf-rm-title" aria-describedby="jf-rm-desc" onClick="{{stop}}" onKeyDown="{{removeKey}}">
+        <div class="ds-dialog-header">
+          <h2 class="ds-dialog-title" id="jf-rm-title">{{removeTitle}}</h2>
+          <p class="ds-dialog-desc" id="jf-rm-desc">{{removeDesc}}</p>
+        </div>
+        <div class="ds-dialog-footer">
+          <button class="ds-btn ds-btn--outline" autoFocus="{{ true }}" onClick="{{cancelRemove}}">Cancel</button>
+          <button class="ds-btn ds-btn--destructive" onClick="{{confirmRemove}}">{{removeOk}}</button>
         </div>
       </div>
     </div>
@@ -906,34 +1060,37 @@ a{color:#31815f}a:hover{color:#226146}
 
   <!-- Share modal -->
   <sc-if value="{{shareOpen}}" hint-placeholder-val="{{ false }}">
-    <div class="{{shareOverlayClass}}" onClick="{{closeShare}}" style="position: absolute; inset: 0; z-index: 50; background: rgba(8,28,37,0.55); display: flex; align-items: center; justify-content: center">
-      <div class="jfmodal" role="dialog" aria-modal="true" aria-labelledby="jf-share-title" aria-describedby="jf-share-desc" onClick="{{stop}}" onKeyDown="{{shareKey}}" style="position: relative; width: 572px; box-sizing: border-box; background: #ffffff; border-radius: 12px; box-shadow: 0 12px 40px rgba(8,28,37,0.28); padding: 30px 26px 24px 27px">
-        <button class="iconbtn" aria-label="Close" onClick="{{closeShare}}" style="position: absolute; top: 16px; right: 16px; width: 32px; height: 32px; border: 0; border-radius: 6px; background: transparent; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+    <div class="{{shareOverlayClass}}" onClick="{{closeShare}}">
+      <div class="jfmodal ds-dialog ds-dialog--lg" role="dialog" aria-modal="true" aria-labelledby="jf-share-title" aria-describedby="jf-share-desc" onClick="{{stop}}" onKeyDown="{{shareKey}}">
+        <button class="ds-btn ds-btn--ghost ds-btn--icon-sm ds-dialog-close" aria-label="Close" onClick="{{closeShare}}">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </button>
-        <h2 id="jf-share-title" style="margin: 0; font-size: 19px; font-weight: 500; line-height: 26px; color: #12232b">Share this location</h2>
-        <p id="jf-share-desc" style="margin: 6px 40px 0 0; font-size: 16px; line-height: 22px; color: #5f6e74">Anyone with the link opens the map at exactly this place and zoom level.</p>
+        <div class="ds-dialog-header" style="padding-right: 32px">
+          <h2 class="ds-dialog-title" id="jf-share-title">Share this location</h2>
+          <p class="ds-dialog-desc" id="jf-share-desc">Anyone with the link opens the map at exactly this place and zoom level.</p>
+        </div>
 
-        <div style="margin-top: 22px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: #f2f5f7; border-radius: 8px">
-          <span style="width: 32px; height: 32px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; flex: none; color: #31815f">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--muted); border-radius: 10px">
+          <span class="ds-featured ds-featured--white ds-featured--sm" style="color: var(--brand)">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
           </span>
           <div style="min-width: 0; display: flex; flex-direction: column">
-            <span style="font-size: 15px; color: #12232b; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{shareTitle}}</span>
-            <span style="font-size: 13px; color: #5f6e74">{{shareMeta}}</span>
+            <span style="font-size: 14px; line-height: 20px; color: var(--foreground); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{shareTitle}}</span>
+            <span style="font-size: 14px; line-height: 20px; color: var(--muted-foreground)">{{shareMeta}}</span>
           </div>
         </div>
 
         <sc-if value="{{canIncludeAreas}}" hint-placeholder-val="{{ false }}">
-          <label style="margin-top: 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #2b3a40; cursor: pointer">
-            <input type="checkbox" checked="{{includeAreas}}" onChange="{{toggleAreas}}" style="width: 18px; height: 18px; margin: 0; accent-color: #31815f; cursor: pointer">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--foreground); cursor: pointer">
+            <input class="ds-native" type="checkbox" checked="{{includeAreas}}" onChange="{{toggleAreas}}">
             Include my drawn digging areas ({{siteCount}})
           </label>
         </sc-if>
 
-        <label for="jf-share-link" style="display: block; margin-top: 18px; font-size: 13px; color: #5f6e74">Link</label>
-        <div style="margin-top: 6px; display: flex; gap: 10px">
-          <input id="jf-share-link" type="text" readOnly="{{ true }}" value="{{shareUrl}}" onFocus="{{selectAll}}" style="flex: 1; min-width: 0; height: 48px; box-sizing: border-box; border: 1px solid #c7d4d9; border-radius: 6px; padding: 0 14px; font-size: 14px; color: #12232b; background: #ffffff; outline: none">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+        <label for="jf-share-link" style="display: block; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--foreground)">Link</label>
+        <div style="display: flex; gap: 8px">
+          <input class="ds-input" id="jf-share-link" type="text" readOnly="{{ true }}" value="{{shareUrl}}" onFocus="{{selectAll}}" style="flex: 1">
           <button onClick="{{copyLink}}" class="{{copyClass}}" style="{{copyStyle}}">
             <sc-if value="{{copied}}" hint-placeholder-val="{{ false }}">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
@@ -943,6 +1100,7 @@ a{color:#31815f}a:hover{color:#226146}
             </sc-if>
             {{copyLabel}}
           </button>
+        </div>
         </div>
       </div>
     </div>
@@ -968,7 +1126,7 @@ var RESTRICTED = [{"kind": "red", "name": "Mapped property V2", "pts": "472.2,27
 var RA_COLORS = { red: { fill: 'rgba(255,64,64,0.32)', stroke: '#ff3b3b' }, orange: { fill: 'rgba(255,178,62,0.34)', stroke: '#f7ae36' } };
 var Z_MIN = 0, Z_MAX = 4.35;
 var STEPS = ['Where will you excavate soil?', 'Address', 'Screening & Registration', 'What history has the site had?', 'Screening & registration requirements'];
-function toolStyle(on) { return 'position: relative; width: 40px; height: 40px; box-sizing: border-box; border: 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; transition: background-color .18s ease, color .18s ease; ' + (on ? 'background: #0b2d3b; color: #ffffff' : 'background: #ffffff; color: #5f6e74'); }
+function toolStyle(on) { return on ? 'background: var(--primary); color: var(--primary-foreground)' : ''; }
 
 /* ---- Drawn vector map: one world, four detail levels (k = 4x per level) ---- */
 var TOP = 4, TGT = [600, 560];
@@ -1139,6 +1297,31 @@ class Component extends DCLogic {
     this.setTarget(TOP);
   }
 
+  /* Glides the map so an address sits in the middle, then rings its pin for a moment */
+  showAddress(i, q) {
+    var self = this, st = this.state, z = st.zf || 0;
+    if (z < TOP - 0.45) { this.setState({ addrFocus: 'a' + i }); return; }
+    /* only move when the pin is near an edge, and never past the aerial photo */
+    var M = 110, dx = 0, dy = 0;
+    if (q[0] < M) dx = M - q[0]; else if (q[0] > MAP_W - M) dx = MAP_W - M - q[0];
+    if (q[1] < M) dy = M - q[1]; else if (q[1] > MAP_H - 160) dy = MAP_H - 160 - q[1];
+    var from = [st.panX || 0, st.panY || 0];
+    var im = LV[TOP], f = SC(z) / SC(TOP);
+    var lim = function (v, a, b) { return a <= b ? Math.max(a, Math.min(b, v)) : v; };
+    var to = [lim(from[0] + dx, MAP_W - 546 - f * (im.x + im.w - 546), -546 - f * (im.x - 546)), lim(from[1] + dy, MAP_H - 514 - f * (im.y + im.h - 514), -514 - f * (im.y - 514))];
+    cancelAnimationFrame(this.panRaf);
+    clearTimeout(this.focusT);
+    var t0 = null, dur = 520;
+    var step = function (ts) {
+      if (t0 == null) t0 = ts;
+      var k = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      self.setState({ panX: from[0] + (to[0] - from[0]) * e, panY: from[1] + (to[1] - from[1]) * e, addrFocus: 'a' + i });
+      if (k < 1) self.panRaf = requestAnimationFrame(step);
+    };
+    this.panRaf = requestAnimationFrame(step);
+    this.focusT = setTimeout(function () { self.setState({ addrFocus: null }); }, 1900);
+  }
+
   selectResult(r) {
     this.setState({ query: r.label, address: r.zoom === TOP ? r.label : '', pin: r.pin, focused: false, hi: -1 });
     this.setTarget(r.zoom);
@@ -1278,7 +1461,7 @@ class Component extends DCLogic {
     st.sites.forEach(function (s, i) {
       if (s.pts.length >= 3 && inPoly(p[0], p[1], s.pts)) {
         var nm = String(s.name || '').trim() || ('Digging area ' + (i + 1)), d = num(s.depth);
-        items.push({ title: nm, sub: 'Digging site, Jordflytning', hi: ptsStr(s.pts), rows: [['Name', nm], ['Site no.', String(i + 1)], ['Size', fmtInt(s.size) + ' m²'], ['Depth', d > 0 ? String(s.depth).replace('.', ',') + ' m' : 'Not set'], ['Volume', d > 0 ? fmt2(d * Math.round(s.size)) + ' m³' : '–']] });
+        items.push({ title: nm, sub: 'Digging site, Jordflytning', hi: ptsStr(s.pts), rows: [['Name', nm], ['Site no.', String(i + 1)], ['Depth', d > 0 ? String(s.depth).replace('.', ',') + ' m' : 'Not set'], ['Volume', d > 0 ? fmt2(d * Math.round(s.size)) + ' m³' : '–']] });
       }
     });
     var addrItem = function (i) {
@@ -1461,6 +1644,9 @@ class Component extends DCLogic {
   renderVals() {
     var self = this, st = this.state;
     var isDraw = !!st.started, isLocate = !isDraw;
+    /* the step that is open in the panel: addresses show on the map only while step 2 or later is open */
+    var openIdx = !isDraw ? -1 : (st.stepOpen != null ? st.stepOpen : (st.stepActive || 0));
+    var inAddr = openIdx === 1;
     var liveDraft = st.pts.concat(st.drawing && st.hover && st.pts.length ? [st.hover] : []);
     var q = st.query.trim().toLowerCase();
     var matches = q.length ? RESULTS.filter(function (r) { return r.label.toLowerCase().indexOf(q) !== -1; }) : [];
@@ -1469,7 +1655,7 @@ class Component extends DCLogic {
     var suggestions = matches.map(function (r, i) {
       return {
         label: r.label,
-        bg: i === st.hi ? '#f2f5f7' : '#ffffff',
+        cls: 'ds-menu-item' + (i === st.hi ? ' hi' : ''),
         pick: function (e) { if (e && e.preventDefault) e.preventDefault(); self.selectResult(r); }
       };
     });
@@ -1484,12 +1670,13 @@ class Component extends DCLogic {
     var pIdx = Object.keys(pHits).map(Number).filter(function (k) { return pHits[k] >= 6; }).sort(function (a, b) { return pHits[b] - pHits[a]; });
     var pTotal = pIdx.reduce(function (t, k) { return t + pHits[k]; }, 0) || 1;
     /* selectable keys: 'a<i>' = an address, 'f<i>' = a field without any address */
-    var fieldKeys = function (f) { var ai = addrsIn(f); return ai.length ? ai.map(function (i) { return 'a' + i; }) : ['f' + f]; };
-    var topKey = pIdx.length ? fieldKeys(pIdx[0])[0] : null;
+    var fieldKeys = function (f) { return addrsIn(f).map(function (i) { return 'a' + i; }); };
+    var aIdx = pIdx.filter(function (f) { return addrsIn(f).length > 0; });
+    var topKey = aIdx.length ? fieldKeys(aIdx[0])[0] : null;
     var addrSel = st.addrSel || {};
     var isSel = function (key) { return Object.prototype.hasOwnProperty.call(addrSel, key) ? !!addrSel[key] : key === topKey; };
     var step2Keys = {};
-    var addrGroups = pIdx.map(function (f) {
+    var addrGroups = aIdx.map(function (f) {
       var keys = fieldKeys(f), anyOn = keys.some(isSel), allOn = keys.every(isSel);
       keys.forEach(function (k) { step2Keys[k] = true; });
       return {
@@ -1504,12 +1691,12 @@ class Component extends DCLogic {
         items: keys.map(function (key) {
           var on = isSel(key), isA = key.charAt(0) === 'a', A = isA ? ADDRS[+key.slice(1)] : null;
           return {
-            address: isA ? A.street + ' ' + A.no : 'No registered address',
-            sub: isA ? '' : 'Select the field itself',
-            pinFill: isA ? (on ? '#0b2d3b' : '#8d999e') : 'transparent',
+            address: A.street + ' ' + A.no,
+            sub: '',
+            pinFill: isA ? (on ? '#0B2D3B' : '#8d999e') : 'transparent',
             checkedStr: on ? 'true' : 'false',
-            boxCls: on ? 'cbox on' : 'cbox',
-            toggle: function () { var n = Object.assign({}, self.state.addrSel || {}); n[key] = !on; self.setState({ addrSel: n }); },
+            boxCls: on ? 'ds-check on' : 'ds-check',
+            toggle: function () { var n = Object.assign({}, self.state.addrSel || {}); n[key] = !on; self.setState({ addrSel: n }); if (!on) self.showAddress(+key.slice(1), scrPt([A.x, A.y])); },
             hoverOn: function () { self.setState({ addrHover: key }); },
             hoverOff: function () { if (self.state.addrHover === key) self.setState({ addrHover: null }); }
           };
@@ -1532,8 +1719,8 @@ class Component extends DCLogic {
         ro: false,
         editing: true,
         done: false,
-        sizeLabel: s.pts.length ? fmtInt(s.size) : (st.drawing && liveDraft.length >= 3 ? fmtInt(area(liveDraft)) : '—'),
-        sizeCls: !s.pts.length && st.drawing && liveDraft.length >= 3 ? 'sitesize live' : 'sitesize',
+        sizeLabel: s.pts.length && num(s.depth) > 0 ? fmtInt(num(s.depth) * Math.round(s.size)) : '—',
+        sizeCls: 'sitesize',
         pendText: !st.drawing ? 'Select the draw tool to draw this area.' : (st.pts.length === 0 ? 'Click on the map to start drawing.' : (st.pts.length < 3 ? 'Drawing new area, keep clicking to add points.' : 'Drawing new area, double-click to finish.')),
         download: function () {
           if (!s.pts.length) return;
@@ -1550,16 +1737,16 @@ class Component extends DCLogic {
         },
         cantFinish: !(st.drawing && st.pts.length >= 3),
         finish: function () { if (st.drawing && st.pts.length >= 3) self.finishDraft(); },
-        finishStyle: 'width: 30px; height: 30px; border: 0; border-radius: 4px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; ' + (st.drawing && st.pts.length >= 3 ? 'color: #2f7d58; cursor: pointer' : 'color: #c2ccd1; cursor: not-allowed'),
+        finishStyle: st.drawing && st.pts.length >= 3 ? 'color: var(--brand)' : '',
         pending: !s.pts.length,
         rowCls: s.pts.length ? 'rowin' : 'rowin pendrow',
         num: i + 1,
-        counterStyle: 'width: 22px; flex: none; font-size: 15px; font-weight: 500; color: #12232b; font-variant-numeric: tabular-nums',
+        counterStyle: 'width: 22px; flex: none; font-size: 15px; font-weight: 500; color: #0C1D24; font-variant-numeric: tabular-nums',
         notPending: !!s.pts.length,
-        badgeStyle: 'position: relative; width: 32px; height: 32px; box-sizing: border-box; border-radius: 50%; font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex: none; transition: background-color .3s ease, color .3s ease, border-color .3s ease; ' + (s.pts.length ? 'background: #31815f; color: #ffffff; border: 0' : 'background: #ffffff; color: #31815f; border: 1.5px dashed #31815f'),
+        badgeStyle: 'position: relative; width: 32px; height: 32px; box-sizing: border-box; border-radius: 50%; font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex: none; transition: background-color .3s ease, color .3s ease, border-color .3s ease; ' + (s.pts.length ? 'background: #31815F; color: #ffffff; border: 0' : 'background: #ffffff; color: #31815F; border: 1.5px dashed #31815F'),
         cantConfirm: cant,
-        rowStyle: 'position: relative; height: 68px; display: flex; align-items: center; gap: 10px; padding: 0 16px 0 18px; transition: background-color .3s ease;' + (i > 0 ? ' border-top: 1px solid #e9edf2;' : '') + (!s.pts.length ? ' background: #ffffff;' : ''),
-        confirmStyle: 'width: 30px; height: 30px; border: 0; border-radius: 4px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; ' + (cant ? 'color: #b4bec2; cursor: not-allowed' : 'color: #31815f; cursor: pointer'),
+        rowStyle: 'position: relative; min-height: 60px; box-sizing: border-box; display: flex; align-items: center; gap: 12px; padding: 12px 16px; transition: background-color .3s ease;' + (i > 0 ? ' border-top: 1px solid var(--border);' : ''),
+        confirmStyle: 'width: 30px; height: 30px; border: 0; border-radius: 4px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; ' + (cant ? 'color: #b4bec2; cursor: not-allowed' : 'color: #31815F; cursor: pointer'),
         onName: function (e) { self.updateSite(s.id, { name: e.target.value }); },
         onDepth: function (e) { self.updateSite(s.id, { depth: e.target.value.replace(/[^0-9.,]/g, '') }); },
         onDepthKey: function (e) { if (e.key === 'Enter') self.updateSite(s.id, { editing: false }); },
@@ -1588,7 +1775,7 @@ class Component extends DCLogic {
     var vf = SC(st.zf || 0) / SC(TOP);
     var scrPt = function (p) { return [546 + (st.panX || 0) + vf * (p[0] - 546), 514 + (st.panY || 0) + vf * (p[1] - 514)]; };
     var vh = st.vhover, vd = st.vdragging;
-    var VG = '#2f7d58';
+    var VG = '#31815F';
     var vtx = [];
     if (isDraw) {
       var scr = function (p) { var q = scrPt(p); return { x: q[0].toFixed(1), y: q[1].toFixed(1) }; };
@@ -1615,7 +1802,7 @@ class Component extends DCLogic {
     var tipX = tipAt[0] - 20, tipY = tipAt[1] + (vhS ? 22 : 18);
     var tipBg = vhS ? '#2f4246' : '#47555c';
 
-    var focusBorder = st.focused ? '#31815f' : '#c7d4d9';
+    var focusBorder = st.focused ? '#31815F' : '#E3E8EC';
     var layerOn = {}, layerRank = {};
     st.layers.forEach(function (l, i) { layerOn[l.id] = l.on; layerRank[l.id] = st.layers.length - i; });
     var activeCount = st.layers.filter(function (l) { return l.on; }).length;
@@ -1690,19 +1877,19 @@ class Component extends DCLogic {
       goBack: function () { self.setState({ confirmOpen: true, focused: false }); },
       confirmOpen: !!st.confirmOpen,
       removeOpen: st.removeId != null,
-      removeOverlayClass: st.removeClosing ? 'jfoverlay out' : 'jfoverlay',
+      removeOverlayClass: st.removeClosing ? 'ds-overlay jfoverlay out' : 'ds-overlay jfoverlay',
       removeTitle: st.removeId === 'all' ? 'Delete all digging sites?' : 'Remove “' + (function () { var i = st.sites.findIndex(function (x) { return x.id === st.removeId; }); var s = st.sites[i]; return s ? (String(s.name || '').trim() || ('Digging area ' + (i + 1))) : ''; })() + '”?',
       removeDesc: st.removeId === 'all' ? 'All ' + st.sites.length + ' digging site' + (st.sites.length === 1 ? '' : 's') + ' and their drawings will be deleted from the map. This can’t be undone.' : 'The drawn area and its details will be deleted from the map. This can’t be undone.',
       removeOk: st.removeId === 'all' ? 'Yes, delete all' : 'Yes, remove',
       siteMenu: !!st.siteMenu,
       siteMenuStr: st.siteMenu ? 'true' : 'false',
-      siteMenuBtnStyle: 'width: 32px; height: 32px; border: 0; border-radius: 6px; background: ' + (st.siteMenu ? '#e3e9ee' : 'transparent') + '; color: #2b3a40; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0',
+      siteMenuBtnStyle: 'width: 32px; height: 32px; border: 0; border-radius: 6px; background: ' + (st.siteMenu ? '#e3e9ee' : 'transparent') + '; color: #0C1D24; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0',
       toggleSiteMenu: function () { self.setState({ siteMenu: !st.siteMenu }); },
       closeSiteMenu: function () { self.setState({ siteMenu: false }); },
       siteMenuKey: function (e) { if (e.key === 'Escape') self.setState({ siteMenu: false }); },
-      sitesMeta: (function () { var d = st.sites.filter(function (s) { return s.pts.length; }).length; return d ? d + ' drawn · ' + fmtInt(st.sites.reduce(function (t, s) { return t + (s.pts.length ? s.size : 0); }, 0)) + ' m²' : ''; })(),
+      sitesMeta: (function () { var d = st.sites.filter(function (s) { return s.pts.length; }).length; return d ? d + ' drawn' : ''; })(),
       noDrawn: !st.sites.some(function (s) { return s.pts.length; }),
-      siteItemStyle: 'display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; height: 38px; padding: 0 10px; ' + (st.sites.some(function (s) { return s.pts.length; }) ? 'color: #12232b; cursor: pointer' : 'color: #a9b6bf; cursor: not-allowed'),
+      siteItemStyle: 'display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; height: 38px; padding: 0 10px; ' + (st.sites.some(function (s) { return s.pts.length; }) ? 'color: #0C1D24; cursor: pointer' : 'color: #a9b6bf; cursor: not-allowed'),
       downloadSites: function () {
         var drawn = st.sites.filter(function (s) { return s.pts.length; });
         if (!drawn.length) return;
@@ -1728,7 +1915,7 @@ class Component extends DCLogic {
       cancelRemove: function () { self.closeRemove(false); },
       confirmRemove: function () { self.closeRemove(true); },
       removeKey: function (e) { if (e.key === 'Escape') self.closeRemove(false); },
-      overlayClass: st.confirmClosing ? 'jfoverlay out' : 'jfoverlay',
+      overlayClass: st.confirmClosing ? 'ds-overlay jfoverlay out' : 'ds-overlay jfoverlay',
       cancelLeave: function () { self.closeModal(); },
       confirmLeave: function () {
         clearTimeout(self.loadT);
@@ -1737,11 +1924,11 @@ class Component extends DCLogic {
       },
       stop: function (e) { if (e && e.stopPropagation) e.stopPropagation(); },
       modalKey: function (e) { if (e.key === 'Escape') self.closeModal(); },
-      toastClass: st.toastOut ? 'toast out' : 'toast',
+      toastClass: st.toastOut ? 'ds-toast toast out' : 'ds-toast toast',
 
       openShare: function () { self.copyText(share.url); },
       shareOpen: !!st.shareOpen,
-      shareOverlayClass: st.shareClosing ? 'jfoverlay out' : 'jfoverlay',
+      shareOverlayClass: st.shareClosing ? 'ds-overlay jfoverlay out' : 'ds-overlay jfoverlay',
       closeShare: function () { self.closeShareModal(); },
       shareKey: function (e) { if (e.key === 'Escape') self.closeShareModal(); },
       shareTitle: share.title,
@@ -1754,8 +1941,8 @@ class Component extends DCLogic {
       selectAll: function (e) { try { e.target.select(); } catch (x) {} },
       copied: !!st.copied, notCopied: !st.copied,
       copyLabel: st.copied ? 'Copied' : 'Copy link',
-      copyClass: st.copied ? '' : 'nextbtn-on',
-      copyStyle: 'height: 48px; padding: 0 18px; border: 0; border-radius: 6px; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap; flex: none; ' + (st.copied ? 'background: #31815f; color: #ffffff' : 'background: #0b2d3b; color: #ffffff'),
+      copyClass: st.copied ? 'ds-btn ds-btn--success' : 'ds-btn ds-btn--primary',
+      copyStyle: '',
       copyLink: function () {
         var done = function () {
           self.setState({ copied: true });
@@ -1774,6 +1961,8 @@ class Component extends DCLogic {
       hasSites: st.sites.length > 0,
       sites: sites,
       totalLabel: fmt2(total),
+      /* soil weighs about 1.8 t per m³ (assumption until DMP gives a factor) */
+      totalTons: fmtInt(total * 1.8),
       addSite: function () { self.setTool('poly'); },
       headTitle: isDraw ? 'Analyse your digging site' : 'Where do you want to dig for soil?',
       headText: isDraw ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis odio eu massa porttitor ornare. Nullam in malesuada libero. Etiam nec enim quis nulla maximus.' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis odio eu massa porttitor ornare. Nullam in malesuada libero. Etiam nec enim quis nulla maximus vestibulum eu at nibh. Mauris sit amet rhoncus nisl. Integer eleifend, neque.',
@@ -1792,21 +1981,20 @@ class Component extends DCLogic {
           isFirst: i === 0,
           isAddress: i === 1,
           isPlaceholder: i > 1,
-          showNext: isActive,
+          showNext: open,
           hint: i === 0 ? (ready ? '' : (hasPendingSite ? 'Draw the digging area on the map to continue' : (st.sites.length && missingDepth ? 'Enter the depth of each digging site to continue' : 'Complete your drawing to continue'))) : (i === 1 ? (addrAny ? '' : 'Select at least one address to continue') : 'Complete this step to go to the next step'),
           nextDisabled: !canNext,
           nextClass: canNext ? 'nextbtn-on' : '',
-          nextStyle: 'height: 36px; padding: 0 16px 0 25px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; flex: none; ' + (canNext ? 'background: #0b2d3b; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
+          nextStyle: 'height: 36px; padding: 0 16px 0 25px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; flex: none; ' + (canNext ? 'background: #0B2D3B; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
           next: function () {
             if (!canNext) return;
             if (isLast) { self.showToast('All steps completed – end of the designed flow'); return; }
+            if (i < active) { self.setState({ stepOpen: i + 1, drawing: false, tool: 'hand', pts: [] }); return; }
             self.setState({ stepActive: i + 1, stepOpen: null, drawing: false, tool: 'hand', pts: [] });
           },
           toggle: function () { if (!disabled) self.setState({ stepOpen: open ? -1 : i }); },
-          headStyle: 'height: 56px; padding: 0 30px 0 28px; font-size: 16px; line-height: 22px; ' +
-            'background: ' + (isActive ? '#f4f6f8' : (i < active ? '#f8fafb' : '#ffffff')) + '; color: ' + (disabled ? '#a9b6bf' : '#12232b') + '; cursor: ' + (disabled ? 'default' : 'pointer') + ';' +
-            (open ? ' box-shadow: inset 0 -1px 0 #e9edf2;' : ''),
-          chevStyle: 'flex: none; transition: transform .3s cubic-bezier(.22,1,.36,1); transform: rotate(' + (open ? 180 : 0) + 'deg); color: ' + (disabled ? '#c2ccd1' : '#2b3a40'),
+          headClass: 'stephead ds-step ds-step--' + (open ? 'open' : (disabled ? 'pending' : (i < active ? 'done' : 'next'))),
+          chevStyle: 'flex: none; transition: transform .3s cubic-bezier(.22,1,.36,1); transform: rotate(' + (open ? 180 : 0) + 'deg); color: currentColor',
           bodyClass: open ? 'stepbody open' : 'stepbody'
         };
       }),
@@ -1852,12 +2040,12 @@ class Component extends DCLogic {
       toolHandStyle: toolStyle((st.tool || 'hand') === 'hand'),
       toolPolyStyle: toolStyle(st.tool === 'poly'),
       toolLineStyle: toolStyle(st.tool === 'line'),
-      toolPolyFill: st.tool === 'poly' ? '#0b2d3b' : '#ffffff',
+      toolPolyFill: st.tool === 'poly' ? '#0B2D3B' : '#ffffff',
       hasMeasure: isDraw && (st.linePts || []).length >= 2,
       measurePts: ptsStr(st.linePts || []),
       hasMeasureLabel: isDraw && (st.linePts || []).length >= 2,
       measureLabel: measureLen + ' m',
-      measureLblStyle: (st.linePts || []).length ? 'position: absolute; left: ' + (st.linePts[st.linePts.length - 1][0] + 10) + 'px; top: ' + (st.linePts[st.linePts.length - 1][1] - 30) + 'px; background: #0b2d3b; color: #ffffff; font-size: 13px; font-weight: 500; padding: 5px 9px; border-radius: 4px; pointer-events: none; z-index: 25; white-space: nowrap' : '',
+      measureLblStyle: (st.linePts || []).length ? 'position: absolute; left: ' + (st.linePts[st.linePts.length - 1][0] + 10) + 'px; top: ' + (st.linePts[st.linePts.length - 1][1] - 30) + 'px; background: #0B2D3B; color: #ffffff; font-size: 13px; font-weight: 500; padding: 5px 9px; border-radius: 4px; pointer-events: none; z-index: 25; white-space: nowrap' : '',
       uploadFile: function () {
         var shape = UPLOAD_SHAPE.map(function (p) { return [p[0], p[1]]; });
         var s = st.sites.concat([{ id: self.nextId++, name: '', depth: '', pts: shape, size: area(shape), editing: true }]);
@@ -1868,7 +2056,7 @@ class Component extends DCLogic {
       nextHint: ready ? '' : 'Complete your drawing to continue',
       nextDisabled: !ready,
       nextClass: ready ? 'nextbtn-on' : '',
-      nextStyle: 'height: 37px; padding: 0 16px 0 24px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; ' + (ready ? 'background: #0b2d3b; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
+      nextStyle: 'height: 37px; padding: 0 16px 0 24px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; ' + (ready ? 'background: #0B2D3B; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
       goNext: function () { if (ready) self.showToast('Next step: screening of ' + st.sites.length + ' site(s), ' + fmt2(total) + ' m³'); },
 
       stageStyle: 'position: absolute; left: 0; top: 0; width: ' + MAP_W + 'px; height: ' + MAP_H + 'px; overflow: hidden; cursor: ' + (st.vdragging ? 'grabbing' : (st.dragging ? 'grabbing' : (isDraw && st.drawing ? (st.hoverS ? 'none' : 'crosshair') : (st.vhover ? 'pointer' : (st.loading ? 'default' : (st.tool === 'select' ? 'pointer' : 'grab')))))),
@@ -1892,7 +2080,7 @@ class Component extends DCLogic {
         if (self.justDragged) { self.justDragged = false; return; }
         if (st.layersOpen) { self.closeLayerPanel(); return; }
         if (isDraw && !st.loading && st.tool === 'select') { self.selectAt(self.mapPoint(e)); return; }
-        if (isDraw && !st.loading && !st.drawing && (st.stepActive || 0) === 1) {
+        if (isDraw && !st.loading && !st.drawing && inAddr) {
           var pi = self.pinAt(self.mapPoint(e)), key = 'a' + pi;
           if (pi >= 0 && self._step2Keys && self._step2Keys[key]) {
             var n = Object.assign({}, st.addrSel || {}); n[key] = !(st.addrSel && Object.prototype.hasOwnProperty.call(st.addrSel, key) ? st.addrSel[key] : self._step2Top === key); self.setState({ addrSel: n }); return;
@@ -1952,21 +2140,24 @@ class Component extends DCLogic {
 
       polys: polys,
       addrGroups: addrGroups,
-      addrMulti: addrCount > 1 || pIdx.length > 1,
-      addrSingle: addrCount <= 1 && pIdx.length <= 1,
-      addrNoticeTitle: 'Your digging area covers ' + addrCount + (addrCount === 1 ? ' address' : ' addresses') + ' in ' + pIdx.length + (pIdx.length === 1 ? ' field' : ' fields'),
+      addrMulti: addrCount > 1 || aIdx.length > 1,
+      addrSingle: addrCount <= 1 && aIdx.length <= 1,
+      addrNoticeTitle: 'Your digging area covers ' + addrCount + (addrCount === 1 ? ' address' : ' addresses') + ' in ' + aIdx.length + (aIdx.length === 1 ? ' field' : ' fields'),
       addrIntro: addrCount >= 1 ? 'Select one or more address' : 'Your digging area does not cover a registered address',
-      parcelHi: isDraw && (st.stepActive || 0) === 1 ? pIdx.map(function (f) {
+      showDim: inAddr && aIdx.some(function (f) { return fieldKeys(f).some(isSel); }),
+      dimPath: 'M-6000,-6000H9000V9000H-6000Z ' + aIdx.filter(function (f) { return fieldKeys(f).some(isSel); }).map(function (f) { return 'M' + FIELDS[f].pts.split(' ').join('L') + 'Z'; }).join(' '),
+      parcelHi: inAddr ? aIdx.map(function (f) {
         var on = fieldKeys(f).some(isSel), hov = st.addrHover === 'F' + f || st.addrHover === 'f' + f;
-        return { pts: FIELDS[f].pts, style: 'fill: ' + (on ? 'rgba(47,125,88,0.20)' : (hov ? 'rgba(255,255,255,0.22)' : 'rgba(255,255,255,0.08)')) + '; stroke: ' + (on ? '#2f7d58' : '#ffffff') + '; stroke-width: ' + (hov ? 3.5 : 2.5) + 'px; stroke-linejoin: round; vector-effect: non-scaling-stroke;' + (on ? '' : ' stroke-dasharray: 7 5;') + ' transition: fill .25s ease' };
+        return { pts: FIELDS[f].pts, style: 'fill: ' + (on ? 'rgba(49,129,95,0.20)' : (hov ? 'rgba(255,255,255,0.22)' : 'rgba(255,255,255,0.08)')) + '; stroke: ' + (on ? '#31815F' : '#ffffff') + '; stroke-width: ' + (hov ? 3.5 : 2.5) + 'px; stroke-linejoin: round; vector-effect: non-scaling-stroke;' + (on ? '' : ' stroke-dasharray: 7 5;') + ' transition: fill .25s ease' };
       }) : [],
-      pins: isDraw && (st.stepActive || 0) >= 1 && (st.zf || 0) >= TOP - 0.45 ? ADDRS.map(function (A, i) {
+      pins: isDraw && openIdx >= 1 && (st.zf || 0) >= TOP - 0.45 ? ADDRS.map(function (A, i) {
         var q = scrPt([A.x, A.y]);
         if (q[0] < -20 || q[1] < -10 || q[0] > MAP_W + 20 || q[1] > MAP_H + 40) return null;
-        var key = 'a' + i, inStep2 = isDraw && (st.stepActive || 0) === 1 && step2Keys[key];
+        var key = 'a' + i, inStep2 = inAddr && step2Keys[key];
         var selItem = st.sel ? st.sel.items[st.sel.detail != null ? st.sel.detail : st.sel.hover] : null;
         var dark = (inStep2 && (isSel(key) || st.addrHover === key)) || (st.sel && (selItem ? selItem.pin === i : st.sel.pin === i));
-        return { t: 'translate(' + (q[0] - 12).toFixed(1) + ' ' + (q[1] - 30).toFixed(1) + ')', fill: dark ? '#0b2d3b' : '#8d999e', op: Math.max(0, Math.min(1, ((st.zf || 0) - (TOP - 0.45)) / 0.3)).toFixed(2) };
+        var focus = st.addrFocus === key;
+        return { t: 'translate(' + (q[0] - 12).toFixed(1) + ' ' + (q[1] - 30).toFixed(1) + ')', fill: dark || focus ? '#0B2D3B' : '#8d999e', ring: focus ? 'pinring on' : 'pinring', op: Math.max(0, Math.min(1, ((st.zf || 0) - (TOP - 0.45)) / 0.3)).toFixed(2) };
       }).filter(Boolean) : [],
       polyLabels: isDraw && (st.zf || 0) > TOP - 0.7 ? st.sites.map(function (s, i) {
         if (!s.pts.length) return null;
@@ -1981,7 +2172,7 @@ class Component extends DCLogic {
           depthStyle: d > 0 ? '' : 'display: none',
           name: s.name || ('Digging area ' + (i + 1)),
           depth: d > 0 ? String(s.depth).replace('.', ',') + ' m' : '',
-          size: fmtInt(s.size),
+          size: d > 0 ? fmtInt(d * Math.round(s.size)) : '—',
           style: 'position: absolute; left: ' + cx.toFixed(1) + 'px; top: ' + cy.toFixed(1) + 'px; transform: translate(-50%, -50%); z-index: 21; pointer-events: none'
         };
       }).filter(Boolean) : [],
@@ -1989,7 +2180,7 @@ class Component extends DCLogic {
       draftPts: ptsStr(draft),
       vtx: vtx,
       showTip: showTip, tipText: tipText,
-      tipStyle: '--tipbg: ' + tipBg + '; position: absolute; left: ' + tipX.toFixed(1) + 'px; top: ' + tipY.toFixed(1) + 'px; background: var(--tipbg); color: #ffffff; font-size: 13px; font-weight: 500; line-height: 18px; padding: 8px 12px; border-radius: 6px; white-space: nowrap; pointer-events: none; z-index: 23; box-shadow: 0 2px 8px rgba(11,45,59,0.18)',
+      tipStyle: 'left: ' + tipX.toFixed(1) + 'px; top: ' + tipY.toFixed(1) + 'px',
 
       zoomIn: function () { self.zoomTo(Math.floor(curT + 0.05) + 1); },
       zoomOut: function () { self.zoomTo(Math.ceil(curT - 0.05) - 1); },
@@ -2002,7 +2193,7 @@ class Component extends DCLogic {
       lv0: LV[0], lv1: LV[1], lv2: LV[2], lv3: LV[3], lv4: LV[4],
       l0Towns: L0_TOWNS, l1Streets: L1_STREETS, l2Blocks: L2.blocks, l2Houses: L2.houses,
       l3Trees: L3_TREES, l3Parcels: L3_PARCELS, l3Labels: L3_LABELS,
-      mapCardCls: (isLocate && !st.loading) ? 'mapcard' : 'mapcard off',
+      mapCardCls: (isLocate && !st.loading) ? 'mapcard ds-callout' : 'mapcard ds-callout off',
       gateCls: (isLocate && !st.loading && st.zoom < READY_LEVEL) ? 'mbar' : 'mbar off',
       gateHidden: (isLocate && !st.loading && st.zoom < READY_LEVEL) ? 'false' : 'true',
       beginCls: (isLocate && !st.loading && st.zoom >= READY_LEVEL) ? 'mbar beginbtn' : 'mbar beginbtn off',
@@ -2013,9 +2204,9 @@ class Component extends DCLogic {
       pcProgressHidden: (isLocate && st.zoom >= READY_LEVEL) ? 'true' : 'false',
       pcReadyCls: (isLocate && st.zoom >= READY_LEVEL) ? 'pcready' : 'pcready pchide',
       pcReadyHidden: (isLocate && st.zoom >= READY_LEVEL) ? 'false' : 'true',
-      pcFillStyle: 'height: 100%; border-radius: 4px; background: #0b2d3b; transition: width .7s cubic-bezier(.22,1,.36,1); width: ' + PROGRESS[Math.max(0, Math.min(TOP, st.zoom))] + '%',
+      pcFillStyle: 'height: 100%; border-radius: 999px; background: var(--primary); transition: width .7s cubic-bezier(.22,1,.36,1); width: ' + PROGRESS[Math.max(0, Math.min(TOP, st.zoom))] + '%',
       showZoomTip: isLocate && !st.loading && st.zoom < READY_LEVEL && !!st.hoverS && !st.dragging,
-      zoomTipStyle: st.hoverS ? 'position: absolute; left: ' + (st.hoverS[0] - 102) + 'px; top: ' + (st.hoverS[1] - 54) + 'px; width: 204px; text-align: center; background: #333d3d; color: #ffffff; font-size: 13px; font-weight: 500; line-height: 18px; padding: 8px 12px; box-sizing: border-box; border-radius: 4px; white-space: nowrap; pointer-events: none; z-index: 25; box-shadow: 0 2px 6px rgba(0,0,0,0.2)' : '',
+      zoomTipStyle: st.hoverS ? 'left: ' + st.hoverS[0] + 'px; top: ' + (st.hoverS[1] - 40) + 'px; transform: translateX(-50%); z-index: 25' : '',
       showBegin: isLocate && !st.loading && st.zoom >= READY_LEVEL,
       beginAnalyse: function () {
         if (st.zoom < READY_LEVEL || st.loading) return;
@@ -2032,22 +2223,22 @@ class Component extends DCLogic {
       readyWrapClass: isLocate && !st.loading && st.zoom >= READY_LEVEL ? 'readywrap on' : 'readywrap',
       readyTab: isLocate && st.zoom >= READY_LEVEL ? 0 : -1,
       showShare: isLocate && !st.loading,
-      showMapSearch: isDraw || !!st.loading,
+      showMapSearch: false,
       mapQuery: st.mapQuery != null ? st.mapQuery : (st.pin ? st.address : ''),
       onMapQuery: function (e) { self.setState({ mapQuery: e.target.value }); },
       readyToDraw: isLocate && st.zoom === TOP,
       notReadyToDraw: !(isLocate && st.zoom === TOP),
       startDisabled: st.zoom !== TOP,
       startClass: st.zoom === TOP ? 'nextbtn-on' : '',
-      startStyle: 'height: 36px; padding: 0 16px 0 25px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; flex: none; ' + (st.zoom === TOP ? 'background: #0b2d3b; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
+      startStyle: 'height: 36px; padding: 0 16px 0 25px; border: 0; border-radius: 4px; font-size: 15px; display: flex; align-items: center; gap: 12px; flex: none; ' + (st.zoom === TOP ? 'background: #0B2D3B; color: #ffffff; cursor: pointer' : 'background: #f2f5f7; color: #9aa5aa; cursor: not-allowed'),
       variantCard: cardVariant, variantClassic: !cardVariant && !(highlightVariant && ready3),
       showReadyBanner: highlightVariant && ready3,
       beginClass: cardVariant ? 'beginbtn live' : 'beginbtn',
       stepsWrapStyle: 'margin-top: ' + (cardVariant ? 36 : 50) + 'px',
-      statusCardStyle: 'margin-top: 24px; border-radius: 10px; padding: 16px; transition: background-color .3s ease, border-color .3s ease; border: 1px solid ' + (ready3 ? '#9fcdb6' : '#e1e7eb') + '; background: ' + (ready3 ? '#f0f7f3' : '#f8fafb'),
+      statusCardStyle: 'margin-top: 24px; border-radius: 10px; padding: 16px; transition: background-color .3s ease, border-color .3s ease; border: 1px solid ' + (ready3 ? '#9fcdb6' : '#e1e7eb') + '; background: ' + (ready3 ? '#f0f7f3' : '#F2F5F7'),
       ringTrack: ready3 ? '#cfe5d9' : '#dae1e8',
-      ringStyle: 'fill: none; stroke: ' + (ready3 ? '#31815f' : '#0b2d3b') + '; stroke-width: 4px; stroke-linecap: round; stroke-dasharray: ' + RING_C.toFixed(1) + '; stroke-dashoffset: ' + (RING_C * (1 - ringPct / 100)).toFixed(1) + '; transition: stroke-dashoffset .45s ease, stroke .3s ease',
-      ringIconStyle: 'position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: ' + (ready3 ? '#31815f' : '#0b2d3b'),
+      ringStyle: 'fill: none; stroke: ' + (ready3 ? '#31815F' : '#0B2D3B') + '; stroke-width: 4px; stroke-linecap: round; stroke-dasharray: ' + RING_C.toFixed(1) + '; stroke-dashoffset: ' + (RING_C * (1 - ringPct / 100)).toFixed(1) + '; transition: stroke-dashoffset .45s ease, stroke .3s ease',
+      ringIconStyle: 'position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: ' + (ready3 ? '#31815F' : '#0B2D3B'),
       ringLabel: ringPct + '%',
       statusTitle: statusTitle,
       statusText: statusText,
@@ -2058,13 +2249,13 @@ class Component extends DCLogic {
       ].map(function (s) {
         return {
           label: s.label,
-          barStyle: 'display: block; height: 4px; border-radius: 2px; transition: background-color .3s ease; background: ' + (s.done ? '#31815f' : (s.active ? '#0b2d3b' : '#dae1e8')),
-          labelStyle: 'font-size: 12px; line-height: 16px; color: ' + (s.done ? '#31815f' : (s.active ? '#12232b' : '#7b8a90')) + '; font-weight: ' + (s.active ? 600 : 400)
+          barStyle: 'display: block; height: 4px; border-radius: 2px; transition: background-color .3s ease; background: ' + (s.done ? '#31815F' : (s.active ? '#0B2D3B' : '#dae1e8')),
+          labelStyle: 'font-size: 12px; line-height: 16px; color: ' + (s.done ? '#31815F' : (s.active ? '#0C1D24' : '#55666D')) + '; font-weight: ' + (s.active ? 600 : 400)
         };
       }),
       startBigClass: ready3 ? 'startbig-on' : '',
-      startIconFill: ready3 ? '#0b2d3b' : '#eef1f4',
-      startBigStyle: 'margin-top: 16px; width: 100%; height: 44px; border: 0; border-radius: 6px; font-size: 15px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 10px; transition: background-color .3s ease, color .3s ease; ' + (ready3 ? 'background: #0b2d3b; color: #ffffff; cursor: pointer' : 'background: #eef1f4; color: #9aa5aa; cursor: not-allowed'),
+      startIconFill: ready3 ? '#0B2D3B' : '#F2F5F7',
+      startBigStyle: 'margin-top: 16px; width: 100%; height: 44px; border: 0; border-radius: 6px; font-size: 15px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 10px; transition: background-color .3s ease, color .3s ease; ' + (ready3 ? 'background: #0B2D3B; color: #ffffff; cursor: pointer' : 'background: #F2F5F7; color: #9aa5aa; cursor: not-allowed'),
       showPin: !!st.pin && !isDraw && (st.zf || 0) >= st.pin.level - 0.6,
       pinStyle: st.pin ? 'position: absolute; left: ' + (toScreen([st.pin.x, st.pin.y], st.pin.level)[0] - 14).toFixed(1) + 'px; top: ' + (toScreen([st.pin.x, st.pin.y], st.pin.level)[1] - 36).toFixed(1) + 'px; z-index: 22; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3))' : '',
       infoOpen: !!st.infoOpen,
@@ -2074,8 +2265,8 @@ class Component extends DCLogic {
       showNotice: !!st.notice,
       noticeTitle: st.noticeT || (st.notice === 'err' ? 'Error occurred' : 'Location copied!'),
       noticeText: st.noticeX || (st.notice === 'err' ? 'The location could not be copied' : 'The location has been copied to your clipboard'),
-      noticeColor: st.notice === 'err' ? '#c8102e' : '#31815f',
-      noticeStyle: 'position: absolute; top: 18px; right: 20px; z-index: 60; width: 400px; box-sizing: border-box; display: flex; align-items: flex-start; gap: 14px; padding: 16px 16px 16px 17px; background: #ffffff; border-radius: 8px; box-shadow: 0 8px 24px rgba(8,28,37,0.18); border: 1px solid ' + (st.notice === 'err' ? '#f0a3b3' : '#9fcdb6'),
+      noticeColor: st.notice === 'err' ? '#c8102e' : '#31815F',
+      noticeStyle: 'position: absolute; top: 18px; right: 20px; z-index: 60',
       closeNotice: function () { clearTimeout(self.noticeT); self.setState({ notice: null }); },
       gateWaiting: true, gateDone: false,
       gateClass: st.gatePhase === 'out' ? 'gate done out' : (gateDone ? 'gate done' : 'gate'),
@@ -2086,8 +2277,8 @@ class Component extends DCLogic {
       drawing: st.drawing,
       drawingStr: st.drawing ? 'true' : 'false',
       toggleDraw: function () { self.setState({ drawing: !st.drawing, pts: [], hover: null }); },
-      drawToolStyle: 'width: 33px; height: 33px; border: 0; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; ' + (st.drawing || st.sites.length ? 'background: #0b2d3b; color: #ffffff' : 'background: #ffffff; color: #0b2d3b'),
-      drawToolFill: (st.drawing || st.sites.length) ? '#0b2d3b' : '#ffffff',
+      drawToolStyle: 'width: 33px; height: 33px; border: 0; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; ' + (st.drawing || st.sites.length ? 'background: #0B2D3B; color: #ffffff' : 'background: #ffffff; color: #0B2D3B'),
+      drawToolFill: (st.drawing || st.sites.length) ? '#0B2D3B' : '#ffffff',
       showStatus: isDraw && !st.loading && (st.drawing || st.tool === 'select' || !!st.vdragging || !!st.vhover),
       statusIsDraw: isDraw && st.drawing,
       statusIsSelect: isDraw && !st.drawing && st.tool === 'select',
@@ -2106,12 +2297,10 @@ class Component extends DCLogic {
       statusMeta: (function () {
         if (st.drawing) {
           var n = st.pts.length, out = [];
-          if (n) out.push(n + (n === 1 ? ' point' : ' points'));
-          if (liveDraft.length >= 3) out.push(fmtInt(area(liveDraft)) + ' m²');
           return out;
         }
         if (st.tool === 'select') return st.sel ? [st.sel.items.length + (st.sel.items.length === 1 ? ' result' : ' results')] : [];
-        if (st.vdragging) { var vs = st.sites.filter(function (s) { return s.id === st.vdragging.id; })[0]; return vs ? [fmtInt(vs.size) + ' m²'] : []; }
+        if (st.vdragging) { var vs = st.sites.filter(function (s) { return s.id === st.vdragging.id; })[0]; return []; }
         return [];
       })(),
       statusDetail: (function () {
@@ -2127,7 +2316,7 @@ class Component extends DCLogic {
         return '';
       })(),
       noPts: !st.pts.length,
-      undoStyle: 'width: 32px; height: 32px; border: 0; border-radius: 6px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; ' + (st.pts.length ? 'color: #5f6e74; cursor: pointer' : 'color: #c2ccd1; cursor: not-allowed'),
+      undoStyle: '',
       undoPoint: function () { if (st.pts.length) self.setState({ pts: st.pts.slice(0, -1) }); },
       clearDraft: function () { self.setState({ pts: [] }); },
 
@@ -2136,7 +2325,7 @@ class Component extends DCLogic {
       layersOpen: !!st.layersOpen,
       layersOpenStr: st.layersOpen ? 'true' : 'false',
       layersPanelClass: st.layersClosing ? 'layerpanel out' : 'layerpanel',
-      layersBtnStyle: 'position: absolute; left: 1027px; top: 14px; width: 38px; height: 38px; border: 0; border-radius: 6px; box-shadow: 0 1px 4px rgba(11,45,59,0.16); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; z-index: 31; ' + (st.layersOpen && !st.layersClosing ? 'background: #0b2d3b; color: #ffffff' : 'background: #ffffff; color: #0b2d3b'),
+      layersBtnStyle: 'position: absolute; left: 1027px; top: 14px; z-index: 31;' + (st.layersOpen && !st.layersClosing ? ' background: var(--primary); color: var(--primary-foreground)' : ''),
       toggleLayers: function () { if (st.layersOpen) self.closeLayerPanel(); else self.setState({ layersOpen: true, layersClosing: false, layerMenu: null, headMenu: false }); },
       closeLayers: function () { self.closeLayerPanel(); },
       layersKey: function (e) {
@@ -2166,15 +2355,15 @@ class Component extends DCLogic {
       layerRows: st.layers.map(function (l, i) {
         var dragging = st.dragId === l.id, over = st.overId === l.id && st.dragId && st.dragId !== l.id;
         var toggle = function () { self.setLayers(function (ls) { return ls.map(function (x) { return x.id === l.id ? Object.assign({}, x, { on: !x.on }) : x; }); }); };
-        var menuItem = 'display: block; width: 100%; text-align: left; border: 0; background: #ffffff; border-radius: 4px; font-size: 14px; height: 36px; padding: 0 12px; ';
+        var menuItem = '';
         return {
           name: l.name,
           onStr: l.on ? 'true' : 'false',
-          rowStyle: 'position: relative; display: flex; align-items: center; gap: 8px; padding: 6px 4px 6px 2px; border-bottom: 1px solid #e9edf2; transition: background-color .2s ease, opacity .2s ease, box-shadow .2s ease; ' +
-            'background: ' + (over ? '#eef3f5' : '#ffffff') + '; opacity: ' + (dragging ? '0.45' : '1') + ';' + (over ? ' box-shadow: inset 0 2px 0 #31815f;' : '') + (st.layerMenu === l.id ? ' z-index: 5;' : ''),
-          thumbStyle: 'width: 38px; height: 38px; box-sizing: border-box; border-radius: 6px; border: 1.5px solid ' + (l.on ? '#2fa59a' : '#c7d4d9') + '; color: ' + (l.on ? '#1f8c82' : '#a9b6bf') + '; flex: none; display: flex; align-items: center; justify-content: center; transition: border-color .2s ease, color .2s ease',
+          rowStyle: 'position: relative; display: flex; align-items: center; gap: 8px; padding: 6px 4px 6px 2px; border-bottom: 1px solid var(--border); transition: background-color .2s ease, opacity .2s ease, box-shadow .2s ease; ' +
+            'background: ' + (over ? 'var(--muted)' : 'var(--background)') + '; opacity: ' + (dragging ? '0.45' : '1') + ';' + (over ? ' box-shadow: inset 0 2px 0 var(--primary);' : '') + (st.layerMenu === l.id ? ' z-index: 5;' : ''),
+          thumbStyle: 'width: 38px; height: 38px; box-sizing: border-box; border-radius: 6px; border: 1px solid ' + (l.on ? 'var(--primary)' : 'var(--border)') + '; color: ' + (l.on ? 'var(--primary)' : 'var(--muted-foreground)') + '; flex: none; display: flex; align-items: center; justify-content: center; transition: border-color .2s ease, color .2s ease',
           imgStyle: 'width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .2s ease, filter .2s ease; ' + (l.on ? '' : 'opacity: 0.45; filter: grayscale(1)'),
-          nameStyle: 'font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color .2s ease; color: ' + (l.on ? '#12232b' : '#7b8a90'),
+          nameStyle: 'font-size: 14px; line-height: 20px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color .2s ease; color: ' + (l.on ? 'var(--foreground)' : 'var(--muted-foreground)'),
           toggle: toggle,
           menuLabel: 'Options for ' + l.name,
           menuOpen: st.layerMenu === l.id,
@@ -2182,8 +2371,8 @@ class Component extends DCLogic {
           toggleLabel: l.on ? 'Hide layer' : 'Show layer',
           toggleFromMenu: toggle,
           isFirst: i === 0, isLast: i === st.layers.length - 1,
-          upStyle: menuItem + (i === 0 ? 'color: #b4bec2; cursor: default' : 'color: #12232b; cursor: pointer'),
-          downStyle: menuItem + (i === st.layers.length - 1 ? 'color: #b4bec2; cursor: default' : 'color: #12232b; cursor: pointer'),
+          upStyle: '',
+          downStyle: '',
           moveUp: function () { self.moveLayer(l.id, i - 1); },
           remove: function () { self.setLayers(function (ls) { return ls.filter(function (x) { return x.id !== l.id; }); }); },
           moveDown: function () { self.moveLayer(l.id, i + 1); },
